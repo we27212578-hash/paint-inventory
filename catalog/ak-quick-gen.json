@@ -1,0 +1,325 @@
+{
+ "brand": "AK Interactive",
+ "series": "Quick Gen",
+ "source": "AK Interactive 官方色表 Color Guide Quick Gen（PDF）",
+ "source_note": "以程式解析 PDF 內嵌文字。",
+ "retrieved": "2026-11-17",
+ "items": [
+  {
+   "code": "AK17001",
+   "name": "Space Magenta"
+  },
+  {
+   "code": "AK17002",
+   "name": "Pink Flesh"
+  },
+  {
+   "code": "AK17003",
+   "name": "Purple Flesh"
+  },
+  {
+   "code": "AK17004",
+   "name": "Lavender"
+  },
+  {
+   "code": "AK17005",
+   "name": "Necromancer Purple"
+  },
+  {
+   "code": "AK17006",
+   "name": "Demon Purple"
+  },
+  {
+   "code": "AK17007",
+   "name": "Dirty Yellow"
+  },
+  {
+   "code": "AK17008",
+   "name": "Bile Yellow"
+  },
+  {
+   "code": "AK17009",
+   "name": "Warm Orange"
+  },
+  {
+   "code": "AK17010",
+   "name": "Warm Yellow"
+  },
+  {
+   "code": "AK17011",
+   "name": "Space Yellow"
+  },
+  {
+   "code": "AK17012",
+   "name": "Solar Yellow"
+  },
+  {
+   "code": "AK17013",
+   "name": "Plague Yellow"
+  },
+  {
+   "code": "AK17014",
+   "name": "Light Yellow"
+  },
+  {
+   "code": "AK17015",
+   "name": "Jade Green"
+  },
+  {
+   "code": "AK17016",
+   "name": "Spectral Green"
+  },
+  {
+   "code": "AK17017",
+   "name": "Space Green"
+  },
+  {
+   "code": "AK17018",
+   "name": "Vivid Green"
+  },
+  {
+   "code": "AK17019",
+   "name": "Space Dark Green"
+  },
+  {
+   "code": "AK17020",
+   "name": "Leaf Green"
+  },
+  {
+   "code": "AK17021",
+   "name": "Forest Green"
+  },
+  {
+   "code": "AK17022",
+   "name": "Rotten Green"
+  },
+  {
+   "code": "AK17023",
+   "name": "Orc Flesh"
+  },
+  {
+   "code": "AK17024",
+   "name": "Ice Blue"
+  },
+  {
+   "code": "AK17025",
+   "name": "Night Blue"
+  },
+  {
+   "code": "AK17026",
+   "name": "Power Blue"
+  },
+  {
+   "code": "AK17027",
+   "name": "Ultramarine Blue"
+  },
+  {
+   "code": "AK17028",
+   "name": "Spectral Blue"
+  },
+  {
+   "code": "AK17029",
+   "name": "Turquoise Blue"
+  },
+  {
+   "code": "AK17030",
+   "name": "Turquoise Green"
+  },
+  {
+   "code": "AK17031",
+   "name": "Crimson Red"
+  },
+  {
+   "code": "AK17032",
+   "name": "Dwarf Flesh"
+  },
+  {
+   "code": "AK17033",
+   "name": "Orange"
+  },
+  {
+   "code": "AK17034",
+   "name": "Space Red"
+  },
+  {
+   "code": "AK17035",
+   "name": "Reddish Orange"
+  },
+  {
+   "code": "AK17036",
+   "name": "Vivid Flesh"
+  },
+  {
+   "code": "AK17037",
+   "name": "Infernal Red"
+  },
+  {
+   "code": "AK17038",
+   "name": "Night Blood"
+  },
+  {
+   "code": "AK17039",
+   "name": "Light Grey Shadow"
+  },
+  {
+   "code": "AK17040",
+   "name": "Grey Shadow"
+  },
+  {
+   "code": "AK17041",
+   "name": "Winter Grey"
+  },
+  {
+   "code": "AK17042",
+   "name": "Bluish Grey"
+  },
+  {
+   "code": "AK17043",
+   "name": "White Shadow"
+  },
+  {
+   "code": "AK17044",
+   "name": "Strong Grey"
+  },
+  {
+   "code": "AK17045",
+   "name": "Space Grey"
+  },
+  {
+   "code": "AK17046",
+   "name": "Dirty Grey"
+  },
+  {
+   "code": "AK17047",
+   "name": "Brown Black"
+  },
+  {
+   "code": "AK17048",
+   "name": "Dark Leather"
+  },
+  {
+   "code": "AK17049",
+   "name": "Black"
+  },
+  {
+   "code": "AK17050",
+   "name": "Soft Black"
+  },
+  {
+   "code": "AK17051",
+   "name": "Blue Black"
+  },
+  {
+   "code": "AK17052",
+   "name": "Night Black"
+  },
+  {
+   "code": "AK17053",
+   "name": "Leather"
+  },
+  {
+   "code": "AK17054",
+   "name": "Orange Brown"
+  },
+  {
+   "code": "AK17055",
+   "name": "Putrid White"
+  },
+  {
+   "code": "AK17056",
+   "name": "Reddish Flesh"
+  },
+  {
+   "code": "AK17057",
+   "name": "Human Flesh"
+  },
+  {
+   "code": "AK17058",
+   "name": "Bone Brown"
+  },
+  {
+   "code": "AK17059",
+   "name": "Camel Brown"
+  },
+  {
+   "code": "AK17060",
+   "name": "Light Leather"
+  },
+  {
+   "code": "AK17061",
+   "name": "Dark Flesh"
+  },
+  {
+   "code": "AK17062",
+   "name": "Wood"
+  },
+  {
+   "code": "AK17063",
+   "name": "Desert Yellow"
+  },
+  {
+   "code": "AK17064",
+   "name": "Vampire Flesh"
+  },
+  {
+   "code": "AK17065",
+   "name": "Gold"
+  },
+  {
+   "code": "AK17066",
+   "name": "Copper"
+  },
+  {
+   "code": "AK17067",
+   "name": "Dark Steel"
+  },
+  {
+   "code": "AK17068",
+   "name": "Old Gold"
+  },
+  {
+   "code": "AK17069",
+   "name": "Bronze"
+  },
+  {
+   "code": "AK17070",
+   "name": "Cold Steel"
+  },
+  {
+   "code": "AK17071",
+   "name": "German Grey"
+  },
+  {
+   "code": "AK17072",
+   "name": "Field Grey"
+  },
+  {
+   "code": "AK17073",
+   "name": "DAK Green"
+  },
+  {
+   "code": "AK17074",
+   "name": "US Olive Uniform"
+  },
+  {
+   "code": "AK17075",
+   "name": "Ochre Green"
+  },
+  {
+   "code": "AK17076",
+   "name": "British Uniform"
+  },
+  {
+   "code": "AK17077",
+   "name": "Russian Uniform"
+  },
+  {
+   "code": "AK17078",
+   "name": "Russian Blue"
+  },
+  {
+   "code": "AK17079",
+   "name": "Desert Sand"
+  }
+ ]
+}

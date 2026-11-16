@@ -78,6 +78,7 @@ export const SEED_BRANDS = [
     name: 'AK Interactive', country: '西班牙',
     series: [
       ['3rd Generation Acrylics', 'acrylic'],
+      ['Quick Gen', 'acrylic'],
       ['Real Colors', 'lacquer'],
       ['Xtreme Metal', 'enamel'],
       ['Weathering Enamels', 'enamel'],

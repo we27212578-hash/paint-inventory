@@ -3,5 +3,6 @@
  "vallejo|model color": "vallejo-model-color.json",
  "vallejo|liquid metal": "vallejo-liquid-metal.json",
  "vallejo|game color": "vallejo-game-color.json",
- "vallejo|xpress color": "vallejo-xpress-color.json"
+ "vallejo|xpress color": "vallejo-xpress-color.json",
+ "ak interactive|quick gen": "ak-quick-gen.json"
 }

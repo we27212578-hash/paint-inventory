@@ -1,149 +1,2153 @@
 {
  "brand": "AK Interactive",
  "series": "3rd Generation Acrylics",
- "source": "https://ak-interactive.com/product-category/paints/paints-acrylics/3rd-acrylics/",
- "source_note": "AK Interactive 官方網站商品列表。目前只收錄第 5 頁（AK11102–AK11129），其餘尚待補齊。",
+ "source": "AK Interactive 官方色表",
+ "source_note": "一般系列 236 色、Air Series 120 色取自官方 PDF；AFV Series 80 色、Figure Series 40 色取自官方色表圖片（人工判讀）。AK11102–AK11129 另與官方網站商品列表核對。",
  "retrieved": "2026-11-17",
  "items": [
   {
+   "code": "AK11001",
+   "name": "White"
+  },
+  {
+   "code": "AK11002",
+   "name": "Offwhite"
+  },
+  {
+   "code": "AK11003",
+   "name": "White Grey"
+  },
+  {
+   "code": "AK11004",
+   "name": "Ivory"
+  },
+  {
+   "code": "AK11005",
+   "name": "Greenish White"
+  },
+  {
+   "code": "AK11006",
+   "name": "Silver Grey"
+  },
+  {
+   "code": "AK11007",
+   "name": "Rock Grey"
+  },
+  {
+   "code": "AK11008",
+   "name": "Grimy Grey"
+  },
+  {
+   "code": "AK11009",
+   "name": "Warm Grey"
+  },
+  {
+   "code": "AK11010",
+   "name": "Medium Grey"
+  },
+  {
+   "code": "AK11011",
+   "name": "Blue Grey"
+  },
+  {
+   "code": "AK11012",
+   "name": "Sky Grey"
+  },
+  {
+   "code": "AK11013",
+   "name": "Pale Grey"
+  },
+  {
+   "code": "AK11014",
+   "name": "Medium Sea Grey"
+  },
+  {
+   "code": "AK11015",
+   "name": "Dark Sea Grey"
+  },
+  {
+   "code": "AK11016",
+   "name": "Grey-Green"
+  },
+  {
+   "code": "AK11017",
+   "name": "Reddish Grey"
+  },
+  {
+   "code": "AK11018",
+   "name": "Neutral Grey"
+  },
+  {
+   "code": "AK11019",
+   "name": "Graphite"
+  },
+  {
+   "code": "AK11020",
+   "name": "English Grey"
+  },
+  {
+   "code": "AK11021",
+   "name": "Basalt Grey"
+  },
+  {
+   "code": "AK11022",
+   "name": "Dark Grey"
+  },
+  {
+   "code": "AK11023",
+   "name": "Lead Grey"
+  },
+  {
+   "code": "AK11024",
+   "name": "Ash Grey"
+  },
+  {
+   "code": "AK11025",
+   "name": "German Grey"
+  },
+  {
+   "code": "AK11026",
+   "name": "Tenebrous Grey"
+  },
+  {
+   "code": "AK11027",
+   "name": "Rubber Black"
+  },
+  {
+   "code": "AK11028",
+   "name": "Smoke Black"
+  },
+  {
+   "code": "AK11029",
+   "name": "Black"
+  },
+  {
+   "code": "AK11030",
+   "name": "Beige"
+  },
+  {
+   "code": "AK11031",
+   "name": "Buff"
+  },
+  {
+   "code": "AK11032",
+   "name": "Pale Sand"
+  },
+  {
+   "code": "AK11033",
+   "name": "Dark Sand"
+  },
+  {
+   "code": "AK11034",
+   "name": "Medium Sand"
+  },
+  {
+   "code": "AK11035",
+   "name": "Sand Yellow"
+  },
+  {
+   "code": "AK11036",
+   "name": "Ice Yellow"
+  },
+  {
+   "code": "AK11037",
+   "name": "Pastel Yellow"
+  },
+  {
+   "code": "AK11038",
+   "name": "Pale Yellow"
+  },
+  {
+   "code": "AK11039",
+   "name": "Purulent Yellow"
+  },
+  {
+   "code": "AK11040",
+   "name": "Sahara Yellow"
+  },
+  {
+   "code": "AK11041",
+   "name": "Golden Yellow"
+  },
+  {
+   "code": "AK11042",
+   "name": "Volcanic Yellow"
+  },
+  {
+   "code": "AK11043",
+   "name": "Dirty Yellow"
+  },
+  {
+   "code": "AK11044",
+   "name": "Yellow"
+  },
+  {
+   "code": "AK11045",
+   "name": "Deep Yellow"
+  },
+  {
+   "code": "AK11046",
+   "name": "Radiant Yellow"
+  },
+  {
+   "code": "AK11047",
+   "name": "Lemon Yellow"
+  },
+  {
+   "code": "AK11048",
+   "name": "Laser Yellow"
+  },
+  {
+   "code": "AK11049",
+   "name": "Fluorescent Yellow"
+  },
+  {
+   "code": "AK11050",
+   "name": "Light Flesh"
+  },
+  {
+   "code": "AK11051",
+   "name": "Luminous Flesh"
+  },
+  {
+   "code": "AK11052",
+   "name": "Basic Skin Tone"
+  },
+  {
+   "code": "AK11053",
+   "name": "Radiant Flesh"
+  },
+  {
+   "code": "AK11054",
+   "name": "Medium Flesh Tone"
+  },
+  {
+   "code": "AK11055",
+   "name": "Sunny Skin Tone"
+  },
+  {
+   "code": "AK11056",
+   "name": "Dark Flesh"
+  },
+  {
+   "code": "AK11057",
+   "name": "Vampiric Flesh"
+  },
+  {
+   "code": "AK11058",
+   "name": "Decomposed Flesh"
+  },
+  {
+   "code": "AK11059",
+   "name": "Pastel Pink"
+  },
+  {
+   "code": "AK11060",
+   "name": "Sickly Pink"
+  },
+  {
+   "code": "AK11061",
+   "name": "Salmon"
+  },
+  {
+   "code": "AK11062",
+   "name": "Old Rose"
+  },
+  {
+   "code": "AK11063",
+   "name": "Brown Rose"
+  },
+  {
+   "code": "AK11064",
+   "name": "Beige Red"
+  },
+  {
+   "code": "AK11065",
+   "name": "Intense Pink"
+  },
+  {
+   "code": "AK11066",
+   "name": "Laser Magenta"
+  },
+  {
+   "code": "AK11067",
+   "name": "Magenta"
+  },
+  {
+   "code": "AK11068",
+   "name": "Fluorescent Magenta"
+  },
+  {
+   "code": "AK11069",
+   "name": "Pastel Violet"
+  },
+  {
+   "code": "AK11070",
+   "name": "Blue Violet"
+  },
+  {
+   "code": "AK11071",
+   "name": "Lilac"
+  },
+  {
+   "code": "AK11072",
+   "name": "Deep Violet"
+  },
+  {
+   "code": "AK11073",
+   "name": "Purple"
+  },
+  {
+   "code": "AK11074",
+   "name": "Deep Purple"
+  },
+  {
+   "code": "AK11075",
+   "name": "Violet Red"
+  },
+  {
+   "code": "AK11076",
+   "name": "Pastel Peach"
+  },
+  {
+   "code": "AK11077",
+   "name": "Light Orange"
+  },
+  {
+   "code": "AK11078",
+   "name": "Medium Orange"
+  },
+  {
+   "code": "AK11079",
+   "name": "Burn Orange"
+  },
+  {
+   "code": "AK11080",
+   "name": "Deep Orange"
+  },
+  {
+   "code": "AK11081",
+   "name": "Fluorescent Orange"
+  },
+  {
+   "code": "AK11082",
+   "name": "Luminous Orange"
+  },
+  {
+   "code": "AK11083",
+   "name": "Dead Red"
+  },
+  {
+   "code": "AK11084",
+   "name": "Ruby"
+  },
+  {
+   "code": "AK11085",
+   "name": "Cadmium Red"
+  },
+  {
+   "code": "AK11086",
+   "name": "Amaranth Red"
+  },
+  {
+   "code": "AK11087",
+   "name": "Scarlet Red"
+  },
+  {
+   "code": "AK11088",
+   "name": "Deep Red"
+  },
+  {
+   "code": "AK11089",
+   "name": "Blood Red"
+  },
+  {
+   "code": "AK11090",
+   "name": "Vermillion"
+  },
+  {
+   "code": "AK11091",
+   "name": "Carmine"
+  },
+  {
+   "code": "AK11092",
+   "name": "Matt Red"
+  },
+  {
+   "code": "AK11093",
+   "name": "Brick Red"
+  },
+  {
+   "code": "AK11094",
+   "name": "Bordeaux Red"
+  },
+  {
+   "code": "AK11095",
+   "name": "Dirty Red"
+  },
+  {
+   "code": "AK11096",
+   "name": "Wine Red"
+  },
+  {
+   "code": "AK11097",
+   "name": "Burnt Red"
+  },
+  {
+   "code": "AK11098",
+   "name": "Black Red"
+  },
+  {
+   "code": "AK11099",
+   "name": "Ocher Orange"
+  },
+  {
+   "code": "AK11100",
+   "name": "Light Brown"
+  },
+  {
+   "code": "AK11101",
+   "name": "Orange Brown"
+  },
+  {
    "code": "AK11102",
-   "name": "Deep Brown",
-   "line": "Intense"
+   "name": "Deep Brown"
   },
   {
    "code": "AK11103",
-   "name": "Medium Rust",
-   "line": "Standard"
+   "name": "Medium Rust"
   },
   {
    "code": "AK11104",
-   "name": "Saddle Brown",
-   "line": "Standard"
+   "name": "Saddle Brown"
   },
   {
    "code": "AK11105",
-   "name": "Light Rust",
-   "line": "Standard"
+   "name": "Light Rust"
   },
   {
    "code": "AK11106",
-   "name": "Mahogany Brown",
-   "line": "Standard"
+   "name": "Mahogany Brown"
   },
   {
    "code": "AK11107",
-   "name": "Dark Rust",
-   "line": "Standard"
+   "name": "Dark Rust"
   },
   {
    "code": "AK11108",
-   "name": "Hull Red",
-   "line": "Standard"
+   "name": "Hull Red"
   },
   {
    "code": "AK11109",
-   "name": "Dark Brown",
-   "line": "Standard"
+   "name": "Dark Brown"
   },
   {
    "code": "AK11110",
-   "name": "Leather Brown",
-   "line": "Standard"
+   "name": "Leather Brown"
   },
   {
    "code": "AK11111",
-   "name": "Burnt Umber",
-   "line": "Standard"
+   "name": "Burnt Umber"
   },
   {
    "code": "AK11112",
-   "name": "Grim Brown",
-   "line": "Standard"
+   "name": "Grim Brown"
   },
   {
    "code": "AK11113",
-   "name": "Chocolate (Chipping)",
-   "line": "Standard"
+   "name": "Chocolate (Chipping)"
   },
   {
    "code": "AK11114",
-   "name": "Deck Tan",
-   "line": "Standard"
+   "name": "Deck Tan"
   },
   {
    "code": "AK11115",
-   "name": "Light Earth",
-   "line": "Standard"
+   "name": "Light Earth"
   },
   {
    "code": "AK11116",
-   "name": "Tan Yellow",
-   "line": "Standard"
+   "name": "Tan Yellow"
   },
   {
    "code": "AK11117",
-   "name": "Golden Brown",
-   "line": "Standard"
+   "name": "Golden Brown"
   },
   {
    "code": "AK11118",
-   "name": "Ochre",
-   "line": "Standard"
+   "name": "Ochre"
   },
   {
    "code": "AK11119",
-   "name": "Cork",
-   "line": "Standard"
+   "name": "Cork"
   },
   {
    "code": "AK11120",
-   "name": "Mud Brown",
-   "line": "Standard"
+   "name": "Mud Brown"
   },
   {
    "code": "AK11121",
-   "name": "Tan Earth",
-   "line": "Standard"
+   "name": "Tan Earth"
   },
   {
    "code": "AK11122",
-   "name": "Green Ochre",
-   "line": "Standard"
+   "name": "Green Ochre"
   },
   {
    "code": "AK11123",
-   "name": "Japanese Brown",
-   "line": "Standard"
+   "name": "Japanese Brown"
   },
   {
    "code": "AK11124",
-   "name": "Middle Stone",
-   "line": "Standard"
+   "name": "Middle Stone"
   },
   {
    "code": "AK11125",
-   "name": "Grey-Brown",
-   "line": "Standard"
+   "name": "Grey-Brown"
   },
   {
    "code": "AK11126",
-   "name": "Green-Brown",
-   "line": "Standard"
+   "name": "Green-Brown"
   },
   {
    "code": "AK11127",
-   "name": "British Khaki",
-   "line": "Standard"
+   "name": "British Khaki"
   },
   {
    "code": "AK11128",
-   "name": "Luminous Green",
-   "line": "Standard"
+   "name": "Luminous Green"
   },
   {
    "code": "AK11129",
-   "name": "Fluorescent Green",
-   "line": "Standard"
+   "name": "Fluorescent Green"
+  },
+  {
+   "code": "AK11130",
+   "name": "Pistachio"
+  },
+  {
+   "code": "AK11131",
+   "name": "Pastel Green"
+  },
+  {
+   "code": "AK11132",
+   "name": "Green Grey"
+  },
+  {
+   "code": "AK11133",
+   "name": "Dark Green Grey"
+  },
+  {
+   "code": "AK11134",
+   "name": "Green Sky"
+  },
+  {
+   "code": "AK11135",
+   "name": "Faded Green"
+  },
+  {
+   "code": "AK11136",
+   "name": "Frog Green"
+  },
+  {
+   "code": "AK11137",
+   "name": "Lime Green"
+  },
+  {
+   "code": "AK11138",
+   "name": "Interior Yellow Green"
+  },
+  {
+   "code": "AK11139",
+   "name": "Golden Olive"
+  },
+  {
+   "code": "AK11140",
+   "name": "Grass Green"
+  },
+  {
+   "code": "AK11141",
+   "name": "Light Green"
+  },
+  {
+   "code": "AK11142",
+   "name": "Deep Green"
+  },
+  {
+   "code": "AK11143",
+   "name": "Mint Green"
+  },
+  {
+   "code": "AK11144",
+   "name": "Emerald"
+  },
+  {
+   "code": "AK11145",
+   "name": "Lizard Green"
+  },
+  {
+   "code": "AK11146",
+   "name": "Dark Green"
+  },
+  {
+   "code": "AK11147",
+   "name": "Olive Green"
+  },
+  {
+   "code": "AK11148",
+   "name": "Medium Olive Green"
+  },
+  {
+   "code": "AK11149",
+   "name": "Intermediate Green"
+  },
+  {
+   "code": "AK11150",
+   "name": "Gunship Green"
+  },
+  {
+   "code": "AK11151",
+   "name": "Brownish Green"
+  },
+  {
+   "code": "AK11152",
+   "name": "Alga Green"
+  },
+  {
+   "code": "AK11153",
+   "name": "Extra Dark Green"
+  },
+  {
+   "code": "AK11154",
+   "name": "German Field Grey"
+  },
+  {
+   "code": "AK11155",
+   "name": "Command Green"
+  },
+  {
+   "code": "AK11156",
+   "name": "Camouflage Green"
+  },
+  {
+   "code": "AK11157",
+   "name": "US Dark Green"
+  },
+  {
+   "code": "AK11158",
+   "name": "Reflective Green"
+  },
+  {
+   "code": "AK11159",
+   "name": "Russian Green"
+  },
+  {
+   "code": "AK11160",
+   "name": "Black Green"
+  },
+  {
+   "code": "AK11161",
+   "name": "Pale Blue"
+  },
+  {
+   "code": "AK11162",
+   "name": "Spectrum Blue"
+  },
+  {
+   "code": "AK11163",
+   "name": "Intermediate Blue"
+  },
+  {
+   "code": "AK11164",
+   "name": "Dark Blue-Grey"
+  },
+  {
+   "code": "AK11165",
+   "name": "Grey-Blue"
+  },
+  {
+   "code": "AK11166",
+   "name": "French Blue"
+  },
+  {
+   "code": "AK11167",
+   "name": "Anthracite Grey"
+  },
+  {
+   "code": "AK11168",
+   "name": "Pastel Blue"
+  },
+  {
+   "code": "AK11169",
+   "name": "Blue Green"
+  },
+  {
+   "code": "AK11170",
+   "name": "Aquatic Turquoise"
+  },
+  {
+   "code": "AK11171",
+   "name": "Turquoise"
+  },
+  {
+   "code": "AK11172",
+   "name": "Archaic Turquoise"
+  },
+  {
+   "code": "AK11173",
+   "name": "Ocean Blue"
+  },
+  {
+   "code": "AK11174",
+   "name": "Snow Blue"
+  },
+  {
+   "code": "AK11175",
+   "name": "Sky Blue"
+  },
+  {
+   "code": "AK11176",
+   "name": "Deep Sky Blue"
+  },
+  {
+   "code": "AK11177",
+   "name": "Ducat Blue"
+  },
+  {
+   "code": "AK11178",
+   "name": "Fluorescent Blue"
+  },
+  {
+   "code": "AK11179",
+   "name": "Ultramarine"
+  },
+  {
+   "code": "AK11180",
+   "name": "Imperial Blue"
+  },
+  {
+   "code": "AK11181",
+   "name": "Dark Blue"
+  },
+  {
+   "code": "AK11182",
+   "name": "Deep Blue"
+  },
+  {
+   "code": "AK11183",
+   "name": "Amethyst Blue"
+  },
+  {
+   "code": "AK11184",
+   "name": "Medium Blue"
+  },
+  {
+   "code": "AK11185",
+   "name": "Star Blue"
+  },
+  {
+   "code": "AK11186",
+   "name": "Light Prussian Blue"
+  },
+  {
+   "code": "AK11187",
+   "name": "Strong Dark Blue"
+  },
+  {
+   "code": "AK11188",
+   "name": "Oxford"
+  },
+  {
+   "code": "AK11189",
+   "name": "Dark Prussian Blue"
+  },
+  {
+   "code": "AK11190",
+   "name": "Dark Sea Blue"
+  },
+  {
+   "code": "AK11191",
+   "name": "Gold"
+  },
+  {
+   "code": "AK11192",
+   "name": "Old Gold"
+  },
+  {
+   "code": "AK11193",
+   "name": "Rusty Gold"
+  },
+  {
+   "code": "AK11194",
+   "name": "Brass"
+  },
+  {
+   "code": "AK11195",
+   "name": "Rusty Brass"
+  },
+  {
+   "code": "AK11196",
+   "name": "Bronze"
+  },
+  {
+   "code": "AK11197",
+   "name": "Copper"
+  },
+  {
+   "code": "AK11198",
+   "name": "Burnt Tin"
+  },
+  {
+   "code": "AK11199",
+   "name": "Metallic Blue"
+  },
+  {
+   "code": "AK11200",
+   "name": "Astral Beryllium"
+  },
+  {
+   "code": "AK11201",
+   "name": "Cobalt Blue"
+  },
+  {
+   "code": "AK11202",
+   "name": "Anodized Violet"
+  },
+  {
+   "code": "AK11203",
+   "name": "Foundry Red"
+  },
+  {
+   "code": "AK11204",
+   "name": "Emerald Metallic Green"
+  },
+  {
+   "code": "AK11205",
+   "name": "Metallic Green"
+  },
+  {
+   "code": "AK11206",
+   "name": "Pearl"
+  },
+  {
+   "code": "AK11207",
+   "name": "Aluminium"
+  },
+  {
+   "code": "AK11208",
+   "name": "Dark Aluminium"
+  },
+  {
+   "code": "AK11209",
+   "name": "Silver"
+  },
+  {
+   "code": "AK11210",
+   "name": "Natural Steel"
+  },
+  {
+   "code": "AK11211",
+   "name": "Oily Steel"
+  },
+  {
+   "code": "AK11212",
+   "name": "Gun Metal"
+  },
+  {
+   "code": "AK11213",
+   "name": "Clear Red"
+  },
+  {
+   "code": "AK11214",
+   "name": "Clear Blue"
+  },
+  {
+   "code": "AK11215",
+   "name": "Clear Smoke"
+  },
+  {
+   "code": "AK11216",
+   "name": "Clear Green"
+  },
+  {
+   "code": "AK11217",
+   "name": "Clear Yellow"
+  },
+  {
+   "code": "AK11218",
+   "name": "Clear Orange"
+  },
+  {
+   "code": "AK11231",
+   "name": "Retarder"
+  },
+  {
+   "code": "AK11232",
+   "name": "Metal Medium"
+  },
+  {
+   "code": "AK11233",
+   "name": "Glaze Medium"
+  },
+  {
+   "code": "AK11234",
+   "name": "Matte Medium"
+  },
+  {
+   "code": "AK11235",
+   "name": "Gloss Medium"
+  },
+  {
+   "code": "AK11260",
+   "name": "Blood Effect"
+  },
+  {
+   "code": "AK11261",
+   "name": "Viscera Effect"
+  },
+  {
+   "code": "AK11262",
+   "name": "Chipping Effect"
+  },
+  {
+   "code": "AK11270",
+   "name": "Black Purple"
+  },
+  {
+   "code": "AK11271",
+   "name": "King Purple"
+  },
+  {
+   "code": "AK11272",
+   "name": "Dragon Blood"
+  },
+  {
+   "code": "AK11273",
+   "name": "Cold Green"
+  },
+  {
+   "code": "AK11274",
+   "name": "Greenskin Punch"
+  },
+  {
+   "code": "AK11275",
+   "name": "Slime Green"
+  },
+  {
+   "code": "AK11276",
+   "name": "Afro Shadow"
+  },
+  {
+   "code": "AK11277",
+   "name": "Redskin Shadow"
+  },
+  {
+   "code": "AK11278",
+   "name": "Beast Brown"
+  },
+  {
+   "code": "AK11279",
+   "name": "Sun Red"
+  },
+  {
+   "code": "AK11301",
+   "name": "WWI British Khaki Brown Base",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11302",
+   "name": "WWI French Milky Coffee",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11303",
+   "name": "WWI French Artillery Grey",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11304",
+   "name": "WWI French Brown",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11305",
+   "name": "WWI French Green 1",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11306",
+   "name": "WWI French Green 2",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11307",
+   "name": "Dunkelgelb Base",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11308",
+   "name": "Olivgrün Base",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11309",
+   "name": "RAL 6003 Olivgrün Opt. 1",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11310",
+   "name": "RAL 6003 Olivgrün Opt. 2",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11311",
+   "name": "RAL 6011 Resedagrün",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11312",
+   "name": "RAL 6011B Resedagrün",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11313",
+   "name": "RAL 7008 Graugrün",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11314",
+   "name": "RAL 7008 Graugrün Opt. 2",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11315",
+   "name": "RAL 7017 Dunkelbraun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11316",
+   "name": "RAL 7021 Dunkelgrau",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11317",
+   "name": "RAL 7027 Grau",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11318",
+   "name": "RAL 7028 Dunkelgelb (Initial)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11319",
+   "name": "RAL 7028 Dunkelgelb Ausgabe 1944",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11320",
+   "name": "RAL 7028 Dunkelgelb (Variant)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11323",
+   "name": "RAL 6040 F9 Helloliv",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11325",
+   "name": "RAL 1039 F9 Sandbeige",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11326",
+   "name": "RAL 8031 F9 Sandbraun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11327",
+   "name": "RAL 8000 Gelbbraun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11328",
+   "name": "RAL 8012 Rotbraun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11329",
+   "name": "RAL 8013 Rotbraun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11330",
+   "name": "RAL 8017 Rotbraun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11331",
+   "name": "RAL 8020 Braun",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11333",
+   "name": "Cremeweiss",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11334",
+   "name": "Olive Drab Base",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11335",
+   "name": "Nº1 Light Green (FS34151)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11336",
+   "name": "Nº5 Earth Brown (FS30099)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11337",
+   "name": "Nº6 Earth Yellow (FS30257)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11338",
+   "name": "Nº8 Earth Red (FS30117)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11339",
+   "name": "Nº9 Olive Drab (FS33070)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11340",
+   "name": "Nº13 Desert Sand (FS30279)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11341",
+   "name": "Ocean Gray (FS35164)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11342",
+   "name": "Dark Green (FS34102)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11343",
+   "name": "MERDC Sand (FS30277)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11344",
+   "name": "Field Drab (FS30118)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11345",
+   "name": "APC Interior Light Green (FS24533)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11346",
+   "name": "USMC Forest Green (FS34079)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11347",
+   "name": "Australian Camouflage Brown",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11348",
+   "name": "Australian Camouflage Green",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11349",
+   "name": "CARC Tan 686A (FS33446)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11350",
+   "name": "Spanish Green",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11351",
+   "name": "Wood Base",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11352",
+   "name": "IDF Modern Grey",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11353",
+   "name": "IDF Sand Grey 1970s-1980s",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11354",
+   "name": "IDF Early Sand Yellow",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11355",
+   "name": "IDF Green",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11356",
+   "name": "SLA Blue",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11357",
+   "name": "LAF Green",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11358",
+   "name": "NATO Green",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11359",
+   "name": "NATO Brown",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11360",
+   "name": "NATO Black",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11361",
+   "name": "New Iraqi Army Sand",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11362",
+   "name": "British Sand Yellow",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11363",
+   "name": "French Army Desert Sand",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11364",
+   "name": "French Army Green",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11365",
+   "name": "French Army Grey-Blue",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11366",
+   "name": "Mustard Yellow",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11367",
+   "name": "Base Green (Protective)",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11368",
+   "name": "Russian Green 4BO",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11369",
+   "name": "Russian Dark Brown 6K",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11370",
+   "name": "Russian Sand 7K",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11371",
+   "name": "Protective Green 1920s-1930s",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11372",
+   "name": "Washable White Paint",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11373",
+   "name": "Khaki Green No.3",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11374",
+   "name": "Silver Grey No.28",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11375",
+   "name": "Slate No.34",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11377",
+   "name": "Light Stone No.61",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11378",
+   "name": "Portland Stone No.64",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11381",
+   "name": "British Dark Olive Green PFI",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11382",
+   "name": "British Desert Pink ZI",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11383",
+   "name": "British Light Mud",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11384",
+   "name": "S.C.C. No.1A Very Dark Brown",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11385",
+   "name": "S.C.C. No.2 Brown",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11386",
+   "name": "S.C.C. No.15 Olive Drab",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11387",
+   "name": "3B AU/ZB AU",
+   "line": "AFV Series"
+  },
+  {
+   "code": "AK11401",
+   "name": "Base Flesh",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11402",
+   "name": "Light Flesh",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11403",
+   "name": "Highlight Flesh",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11404",
+   "name": "Shadow Flesh",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11405",
+   "name": "Dark Shadow Flesh",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11406",
+   "name": "Reddish Black",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11407",
+   "name": "Black Uniform Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11408",
+   "name": "DOT44 Brown Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11409",
+   "name": "Orange Tan",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11410",
+   "name": "Dark Green",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11411",
+   "name": "Light Green",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11412",
+   "name": "Medium Green",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11413",
+   "name": "Denison Tan Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11414",
+   "name": "Splittermuster Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11415",
+   "name": "Splittermuster Green Spots",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11416",
+   "name": "Waffen Brown Grey",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11417",
+   "name": "Waffen Brown",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11418",
+   "name": "Brown Black",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11419",
+   "name": "Waffen Red Brown",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11420",
+   "name": "Waffen Green",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11421",
+   "name": "Dark Olive Green",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11422",
+   "name": "Ocher Khaki",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11423",
+   "name": "Field Grey Base #2 (Grey Uniform)",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11424",
+   "name": "Grey Green",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11425",
+   "name": "Field Grey Base #1 (Green Uniform)",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11426",
+   "name": "Grey Blue",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11427",
+   "name": "Green Uniform Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11428",
+   "name": "Light Green Uniform",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11429",
+   "name": "Russian Uniform Lights",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11430",
+   "name": "Russian Uniform Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11431",
+   "name": "Russian Blue Lights",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11432",
+   "name": "Russian Blue Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11433",
+   "name": "US Olive Base Uniform",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11434",
+   "name": "Red Brown",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11435",
+   "name": "Field Drab",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11436",
+   "name": "Canvas Tone",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11437",
+   "name": "British Uniform Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11438",
+   "name": "British Uniform Lights",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11439",
+   "name": "French Greyish Blue",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11440",
+   "name": "Desert Uniform Base",
+   "line": "Figure Series"
+  },
+  {
+   "code": "AK11801",
+   "name": "WWI German Fokker Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11802",
+   "name": "WWI German Light Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11803",
+   "name": "WWI German Dark Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11804",
+   "name": "WWI German Mauve",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11805",
+   "name": "WWI German Red Brown",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11806",
+   "name": "WWI German Light Blue",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11807",
+   "name": "WWI German Lilac",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11808",
+   "name": "WWI German Grey-Green Primer",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11809",
+   "name": "PC10 Late",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11810",
+   "name": "PC12",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11811",
+   "name": "RLM 02 RLM-Grau (1938)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11812",
+   "name": "RLM 02 RLM-Grau (1941)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11813",
+   "name": "RLM 04",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11814",
+   "name": "RLM 61",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11815",
+   "name": "RLM 62",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11816",
+   "name": "RLM 63",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11817",
+   "name": "RLM 65 (1938)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11818",
+   "name": "RLM 65 (1941)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11819",
+   "name": "RLM 66 (1938)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11820",
+   "name": "RLM 66 (1941)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11821",
+   "name": "RLM 70",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11822",
+   "name": "RLM 71",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11823",
+   "name": "RLM 72",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11824",
+   "name": "RLM 73",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11825",
+   "name": "RLM 74",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11826",
+   "name": "RLM 75",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11827",
+   "name": "RLM 76 Version 1",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11828",
+   "name": "RLM 76 Version 2",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11829",
+   "name": "RLM 76 Late War Variation",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11830",
+   "name": "RLM 78 (1941)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11831",
+   "name": "RLM 78 (1942)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11832",
+   "name": "RLM 79 (1941)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11833",
+   "name": "RLM 79 (1942)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11834",
+   "name": "RLM 80",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11835",
+   "name": "RLM 81 Version 1",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11836",
+   "name": "RLM 81 Version 2",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11837",
+   "name": "RLM 81 Version 3",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11838",
+   "name": "RLM 82",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11839",
+   "name": "RLM 83",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11840",
+   "name": "RAF Dark Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11841",
+   "name": "RAF Dark Earth",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11842",
+   "name": "RAF Ocean Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11843",
+   "name": "RAF Medium Sea Grey BS381C/637",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11844",
+   "name": "RAF Sky / FS 34424",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11845",
+   "name": "RAF Azure Blue",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11846",
+   "name": "RAF Middle Stone",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11847",
+   "name": "RAF Cockpit Grey-Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11848",
+   "name": "RAF Sky Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11849",
+   "name": "RAF Dark Slate Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11850",
+   "name": "RAF Extra Dark Sea Grey BS381C/640",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11851",
+   "name": "RAF Dark Sea Grey BS381C/638",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11852",
+   "name": "RAF PRU Blue BS381C/636",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11853",
+   "name": "RAF Light Aircraft Grey BS381C/627",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11854",
+   "name": "RAF Camouflage (Barley) Grey BS381C/626",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11855",
+   "name": "RAF Dark Camouflage Grey BS381C/629",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11856",
+   "name": "RAF Camouflage Beige (Hemp) BS381C/389",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11857",
+   "name": "Bronze Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11858",
+   "name": "Zinc Chromate Yellow",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11859",
+   "name": "US Interior Yellow Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11860",
+   "name": "Dark Olive Drab 41",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11861",
+   "name": "Medium Green 42",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11862",
+   "name": "Neutral Grey 43",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11863",
+   "name": "ANA 613 Olive Drab",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11864",
+   "name": "Deep Sea Blue",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11865",
+   "name": "M-485 Blue-Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11866",
+   "name": "Light Gull Grey FS 16440",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11867",
+   "name": "ADC Grey FS 16473",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11868",
+   "name": "Insignia White FS 17875",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11869",
+   "name": "Sand FS 33531",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11870",
+   "name": "Radome Tan FS 33613",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11871",
+   "name": "USMC Sand FS 33711",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11872",
+   "name": "US Army Helo Drab FS 34031",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11873",
+   "name": "Dull Dark Green FS 34092",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11874",
+   "name": "USMC Green FS 34095",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11875",
+   "name": "Field Green FS 34097",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11876",
+   "name": "Green FS 34258",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11877",
+   "name": "Aggressor Blue FS 35109",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11878",
+   "name": "Blue FS 35190",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11879",
+   "name": "Air Superiority Blue FS 35450",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11880",
+   "name": "Duck Egg Blue FS 35622",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11881",
+   "name": "Medium Gunship Grey FS 36118",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11882",
+   "name": "Have Glass Grey FS 36170",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11883",
+   "name": "F-15 Dark Grey (Mod Eagle) FS 36176",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11884",
+   "name": "Dark Gull Grey FS 36231",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11885",
+   "name": "Aggressor Grey FS 36251",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11886",
+   "name": "Medium Grey FS 36270",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11887",
+   "name": "Dark Ghost Grey FS 36320",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11888",
+   "name": "Light Ghost Grey FS 36375",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11889",
+   "name": "Light Grey FS 36495",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11890",
+   "name": "Camouflage Grey FS 36622",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11891",
+   "name": "IJN J3 HAI-Iro (Grey)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11892",
+   "name": "IJN J3 SP (Amber Grey)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11893",
+   "name": "IJN D1 Deep Green Black",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11894",
+   "name": "IJN D2 Green Black",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11895",
+   "name": "IJN Q1 Anti-Glare Blue-Black",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11896",
+   "name": "IJN M3 (M) Mitsubishi Interior Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11897",
+   "name": "IJN M3 (N) Nakajima Interior Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11898",
+   "name": "IJN/IJA Aotake",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11899",
+   "name": "IJA #1 Hairyokushoku (Grey-Green)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11900",
+   "name": "IJA #3 Hairanshoku (Grey Indigo)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11901",
+   "name": "IJA #7 Ohryuko Nana Go Shoku (Olive Brown)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11902",
+   "name": "IJA #21 Midori Iro (Green)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11903",
+   "name": "IJA #27 Ao Midori Iro (Blue-Green)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11904",
+   "name": "IJA #29 Ki Midori Iro (Yellow-Green)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11905",
+   "name": "IJA #30 Karekusa Iro (Dry Grass)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11906",
+   "name": "IJA #31 Cha Kasshoku (Tea Colour)",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11907",
+   "name": "Grey-Blue 1920S-1930S",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11908",
+   "name": "AE-9/AII Light Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11909",
+   "name": "AII Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11910",
+   "name": "AII Light Blue",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11911",
+   "name": "A-14 Interior Steel Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11912",
+   "name": "A-18F Light Grey-Blue",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11913",
+   "name": "A-19F Grass Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11914",
+   "name": "A-21M Light Yellowish Brown",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11915",
+   "name": "AMT-4 (A-24M) Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11916",
+   "name": "AMT-7 Light Blue",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11917",
+   "name": "AMT-11 Blue-Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11918",
+   "name": "AMT-12 Dark Grey",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11919",
+   "name": "Radome & Wheel Hub Green",
+   "line": "Air Series"
+  },
+  {
+   "code": "AK11920",
+   "name": "MIG-25/MIG-31 Grey",
+   "line": "Air Series"
   }
  ]
 }
