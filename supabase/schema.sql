@@ -33,6 +33,7 @@ create table if not exists public.series (
   brand_id       uuid not null references public.brands(id) on delete cascade,
   name           text not null,
   default_medium text,          -- 預設漆性代碼，例如 acrylic / enamel / lacquer / oil
+  tone_count     int check (tone_count between 2 and 12),  -- 有色階的系列（例如 Tone Pro = 5）
   notes          text,
   sort           int  not null default 0,
   created_at     timestamptz not null default now(),
@@ -48,6 +49,7 @@ create table if not exists public.paints (
   series_id      uuid references public.series(id) on delete set null,
   code           text,           -- 色碼，例如 XF-63
   name           text,           -- 色名
+  tone           int check (tone between 1 and 12),        -- 色階編號（系列有色階時使用）
   category       text,           -- 種類代碼（一般漆、底漆…或輔助劑種類），由前端定義
   medium         text,           -- 漆性代碼：acrylic / enamel / lacquer / oil / other
   finish         text,           -- 光澤：matt / satin / gloss / metallic / other

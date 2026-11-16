@@ -1,5 +1,5 @@
 // 計畫：清單、計畫頁（計畫顏料、子項目、塗層）
-import { S, add, patch, del, byId, brandName, shoppingReason, comparePaints } from './store.js';
+import { S, add, patch, del, byId, paintName, brandName, shoppingReason, comparePaints } from './store.js';
 import { PROJECT_STATUSES } from './constants.js';
 import { esc, confirmModal, formModal, toast, fail, today } from './ui.js';
 import { actions, refresh, go } from './core.js';
@@ -106,7 +106,7 @@ const pchip = (p, removeAct, removeId) => {
   const reason = shoppingReason(p);
   return `<span class="pchip ${reason ? 'need' : ''}">
     <button class="pchip-main" data-act="paint-open" data-id="${p.id}" title="${esc(brandName(p.brand_id))}">
-      ${well(p, 'sm')}<b class="code">${esc(p.code || '')}</b><span>${esc(p.name || (p.code ? '' : '未命名'))}</span>${reason ? `<em>${reason}</em>` : ''}
+      ${well(p, 'sm')}<b class="code">${esc(p.code || '')}</b><span>${esc(paintName(p) || (p.code ? '' : '未命名'))}</span>${reason ? `<em>${reason}</em>` : ''}
     </button>
     <button class="pchip-x" data-act="${removeAct}" data-id="${removeId}" aria-label="移除 ${esc(paintTitle(p))}">×</button>
   </span>`;

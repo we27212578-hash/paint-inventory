@@ -1,8 +1,9 @@
 // 顏料庫／輔助劑：清單、過濾器、詳細資料、新增與編輯表單、顏料選擇器
 import {
   S, be, add, patch, del, byId, brandName, seriesName, sortedBrands, seriesOf,
-  findDuplicates, comparePaints, projectsUsing, normCode,
+  findDuplicates, comparePaints, projectsUsing, normCode, paintName,
 } from './store.js';
+import { tonePreset, presetHex } from './presets.js';
 import {
   ITEM_CLASSES, PAINT_CATEGORIES, AUX_CATEGORIES, ALL_CATEGORIES, CATEGORY_HINTS,
   MEDIUMS, MEDIUM_GROUPS, FINISHES, STATUSES,
@@ -29,12 +30,28 @@ export const well = (p, size = '') =>
     ? `<span class="well ${size}" style="--c:${p.swatch_hex}"></span>`
     : `<span class="well none ${size}" title="尚未設定色票"></span>`;
 
-export const paintTitle = (p) => [p.code, p.name].filter(Boolean).join(' ') || '未命名';
+export const paintTitle = (p) => [p.code, paintName(p)].filter(Boolean).join(' ') || '未命名';
 
 const level = (p) =>
   p.owned
     ? `<span class="lvl lvl-${p.status}" title="${STATUSES[p.status]}"><i></i><i></i><i></i></span>`
     : `<span class="tag warn">尚未擁有</span>`;
+
+const familyKey = (p) => `${p.series_id}|${(p.name || '').trim().toLowerCase()}`;
+
+// 深色色票用淺色字，淺色色票用深色字
+function inkFor(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  const lum = 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255);
+  return lum > 150 ? '#1c2726' : '#f4f2ea';
+}
+
+function toneSlot(p, i) {
+  const state = !p.owned ? 'unowned' : p.status === 'empty' || p.status === 'low' ? 'low' : '';
+  const stateText = !p.owned ? '尚未擁有' : `${p.quantity} 罐，${STATUSES[p.status]}`;
+  const style = validHex(p.swatch_hex) && p.owned ? `style="--c:${p.swatch_hex};--ink:${inkFor(p.swatch_hex)}"` : '';
+  return `<button class="tone have ${state}" ${style} data-act="paint-open" data-id="${p.id}" aria-label="${esc(paintName(p))}：${stateText}" title="${stateText}">${i}</button>`;
+}
 
 function optionCounts(cls, key, valueOf) {
   const counts = new Map();
@@ -55,7 +72,7 @@ function matches(p, f) {
   if (f.status.size && !f.status.has(p.owned ? p.status : 'unowned')) return false;
   const q = f.q.trim().toLowerCase();
   if (q) {
-    const hay = [p.code, p.name, brandName(p.brand_id), seriesName(p.series_id), p.notes, ALL_CATEGORIES[p.category]]
+    const hay = [p.code, paintName(p), brandName(p.brand_id), seriesName(p.series_id), p.notes, ALL_CATEGORIES[p.category]]
       .filter(Boolean).join(' ').toLowerCase();
     const code = normCode(p.code);
     for (const token of q.split(/\s+/)) {
@@ -130,6 +147,7 @@ function listHtml(cls) {
   }
   let html = '';
   let lastBrand;
+  const doneFamilies = new Set();
   for (const p of shown) {
     if (p.brand_id !== lastBrand) {
       if (lastBrand !== undefined) html += '</ul>';
@@ -138,10 +156,32 @@ function listHtml(cls) {
       lastBrand = p.brand_id;
     }
     const tags = [ALL_CATEGORIES[p.category], MEDIUMS[p.medium], cls === 'paint' ? FINISHES[p.finish] : null].filter(Boolean);
+    const toneCount = p.tone ? byId('series', p.series_id)?.tone_count : null;
+    if (toneCount) {
+      // 有色階的系列：同一個顏色合併成一列，用格子顯示每一號有沒有
+      const key = familyKey(p);
+      if (doneFamilies.has(key)) continue;
+      doneFamilies.add(key);
+      const family = all.filter((x) => x.tone && familyKey(x) === key);
+      const slots = [];
+      for (let i = 1; i <= toneCount; i++) {
+        const x = family.find((f) => Number(f.tone) === i);
+        slots.push(x ? toneSlot(x, i) : `<button class="tone missing" data-act="tone-add" data-series="${p.series_id}" data-name="${esc(p.name || '')}" data-tone="${i}" aria-label="${esc(p.name || '')} ${i} 號：沒有，點一下新增">${i}</button>`);
+      }
+      const have = family.filter((f) => f.owned).length;
+      html += `<li class="tone-row">
+        <span class="paint-main">
+          <span class="paint-line"><span class="pname fam">${esc(p.name || '未命名')}</span></span>
+          <span class="paint-sub">${esc([seriesName(p.series_id), ...tags, `有 ${have} / ${toneCount}`].filter(Boolean).join('　'))}</span>
+        </span>
+        <span class="tones">${slots.join('')}</span>
+      </li>`;
+      continue;
+    }
     html += `<li><button class="paint" data-act="paint-open" data-id="${p.id}">
       ${well(p)}
       <span class="paint-main">
-        <span class="paint-line"><b class="code">${esc(p.code || '')}</b><span class="pname">${esc(p.name || (p.code ? '' : '未命名'))}</span></span>
+        <span class="paint-line"><b class="code">${esc(p.code || '')}</b><span class="pname">${esc(paintName(p) || (p.code ? '' : '未命名'))}</span></span>
         <span class="paint-sub">${esc([seriesName(p.series_id), ...tags].filter(Boolean).join('　'))}</span>
       </span>
       <span class="paint-stock">${p.owned ? `<span class="qty">×${p.quantity}</span>` : ''}${level(p)}</span>
@@ -237,7 +277,7 @@ actions['filters-close'] = () => document.body.classList.remove('filters-open');
 // ---------- 詳細資料 ----------
 const imageSearchUrl = (p) =>
   'https://www.google.com/search?tbm=isch&q=' +
-  encodeURIComponent([p.brand_id ? brandName(p.brand_id) : '', seriesName(p.series_id), p.code, p.name].filter(Boolean).join(' '));
+  encodeURIComponent([p.brand_id ? brandName(p.brand_id) : '', seriesName(p.series_id), p.code, paintName(p)].filter(Boolean).join(' '));
 
 function detailHtml(p) {
   const rows = [
@@ -262,7 +302,7 @@ function detailHtml(p) {
       ${well(p, 'xl')}
       <div>
         <p class="code big">${esc(p.code || '')}</p>
-        <h2>${esc(p.name || (p.code ? '' : '未命名'))}</h2>
+        <h2>${esc(paintName(p) || (p.code ? '' : '未命名'))}</h2>
       </div>
     </div>
 
@@ -375,6 +415,15 @@ actions['paint-new'] = async () => {
   if (made) refresh();
 };
 
+actions['tone-add'] = async (el) => {
+  const series = byId('series', el.dataset.series);
+  if (!series) return;
+  const made = await openPaintForm({
+    preset: { item_class: currentClass, brand_id: series.brand_id, series_id: series.id, name: el.dataset.name, medium: series.default_medium, tones: [Number(el.dataset.tone)] },
+  });
+  if (made) refresh();
+};
+
 actions['paint-edit'] = async (el) => {
   await openPaintForm({ id: el.dataset.id });
   redrawDetail();
@@ -391,8 +440,9 @@ export function openPaintForm({ id, preset = {} } = {}) {
   const p = editing || {
     item_class: 'paint', brand_id: null, series_id: null, code: '', name: '', category: null, medium: null,
     finish: null, volume_ml: null, quantity: 1, status: 'full', owned: true, swatch_hex: null,
-    package_image: null, swatch_image: null, notes: '', ...preset,
+    package_image: null, swatch_image: null, notes: '', tone: null, ...preset,
   };
+  const presetTones = new Set(preset.tones || []);
   // 尚未儲存的圖片：{ blob, url }、'remove'（要移除）或 null（不變）
   const pending = { package_image: null, swatch_image: null };
 
@@ -430,7 +480,11 @@ export function openPaintForm({ id, preset = {} } = {}) {
           <label class="field"><span>品牌</span><select name="brand_id">${brandOptions(p.brand_id)}</select></label>
           <label class="field"><span>系列</span><select name="series_id">${seriesOptions(p.brand_id, p.series_id)}</select></label>
           <label class="field"><span>色碼</span><input name="code" value="${esc(p.code || '')}" placeholder="例如 XF-63" autocomplete="off" autocapitalize="characters"></label>
-          <label class="field"><span>名稱</span><input name="name" value="${esc(p.name || '')}" placeholder="例如 German Grey" autocomplete="off"></label>
+          <label class="field"><span>名稱</span><input name="name" value="${esc(p.name || '')}" placeholder="例如 German Grey" autocomplete="off" list="pf-families"><datalist id="pf-families"></datalist></label>
+        </div>
+        <div class="tone-field" id="pf-tone" hidden>
+          <span class="imgfield-label">色階<small id="pf-tone-hint"></small></span>
+          <div class="tone-boxes" id="pf-tone-boxes"></div>
         </div>
         <div id="pf-dup"></div>
 
@@ -489,7 +543,46 @@ export function openPaintForm({ id, preset = {} } = {}) {
     };
     const syncOwned = () => ($('#pf-stock', el).hidden = !field('owned').checked);
     const syncCatHint = () => ($('#pf-cat-hint', el).textContent = CATEGORY_HINTS[field('category').value] || '');
+    const tonedSeries = () => {
+      const sr = byId('series', field('series_id').value);
+      return sr?.tone_count ? sr : null;
+    };
+    const checkedTones = () => $$('#pf-tone-boxes input:checked', el).map((i) => Number(i.value));
+    // 色階格子：新增時可複選（一次建多罐），編輯時單選
+    const syncTone = () => {
+      const sr = tonedSeries();
+      const box = $('#pf-tone', el);
+      box.hidden = !sr;
+      $('#pf-families', el).innerHTML = '';
+      if (!sr) return;
+      const preset = tonePreset(sr.name);
+      if (preset) {
+        $('#pf-families', el).innerHTML = preset.families.map(([n]) => `<option value="${esc(n)}"></option>`).join('');
+        if (!editing && preset.volume_ml && !field('volume_ml').value) field('volume_ml').value = preset.volume_ml;
+      }
+      const name = field('name').value.trim().toLowerCase();
+      const existing = new Map(
+        S.paints.filter((x) => x.series_id === sr.id && x.id !== editing?.id && name && (x.name || '').trim().toLowerCase() === name).map((x) => [Number(x.tone), x]),
+      );
+      const was = new Set(box.dataset.series === sr.id ? checkedTones() : editing?.tone ? [Number(editing.tone)] : [...presetTones]);
+      box.dataset.series = sr.id;
+      let html = '';
+      for (let i = 1; i <= sr.tone_count; i++) {
+        const hex = presetHex(sr.name, field('name').value, i);
+        const taken = existing.get(i);
+        html += `<label class="tone-box ${taken ? 'taken' : ''}" ${hex ? `style="--c:${hex};--ink:${inkFor(hex)}"` : ''}>
+          <input type="${editing ? 'radio' : 'checkbox'}" name="tone_pick" value="${i}" ${was.has(i) && !taken ? 'checked' : ''} ${taken ? 'disabled' : ''}>
+          <span>${i}</span>${taken ? `<small>${taken.owned ? '已有' : '已列入'}</small>` : ''}
+        </label>`;
+      }
+      $('#pf-tone-boxes', el).innerHTML = html;
+      $('#pf-tone-hint', el).textContent = editing ? '　這一罐是第幾號' : '　勾選你有的號數，可以一次勾多個';
+    };
     const syncDup = () => {
+      if (tonedSeries() && !field('code').value.trim()) {
+        $('#pf-dup', el).innerHTML = '';
+        return [];
+      }
       const dups = findDuplicates({ id: editing?.id, brand_id: field('brand_id').value || null, code: field('code').value });
       $('#pf-dup', el).innerHTML = dups.length
         ? `<div class="dup-warn"><strong>庫存裡已經有這個色碼</strong>${dups.map((d) => `<span>${well(d, 'sm')}${esc(paintTitle(d))}　${d.owned ? `${d.quantity} 罐，${STATUSES[d.status]}` : '尚未擁有'}</span>`).join('')}</div>`
@@ -504,7 +597,8 @@ export function openPaintForm({ id, preset = {} } = {}) {
       if (ok) $('#pf-color', el).value = hex.toLowerCase();
     };
 
-    syncClass(); syncOwned(); syncCatHint(); syncDup();
+    syncClass(); syncOwned(); syncCatHint(); syncTone(); syncDup();
+    field('name').addEventListener('input', syncTone);
 
     $$('input[name=item_class]', el).forEach((r) =>
       r.addEventListener('change', () => {
@@ -529,6 +623,7 @@ export function openPaintForm({ id, preset = {} } = {}) {
         }
       }
       field('series_id').innerHTML = seriesOptions(sel.value, null);
+      syncTone();
       syncDup();
     });
 
@@ -552,6 +647,8 @@ export function openPaintForm({ id, preset = {} } = {}) {
       }
       const s = byId('series', sel.value);
       if (s?.default_medium) field('medium').value = s.default_medium;
+      syncTone();
+      syncDup();
     });
 
     $('#pf-color', el).addEventListener('input', (e) => {
@@ -646,6 +743,13 @@ export function openPaintForm({ id, preset = {} } = {}) {
         notes: text('notes'),
       };
 
+      const sr = tonedSeries();
+      const tones = sr ? checkedTones() : [];
+      if (sr && !tones.length) return showError(editing ? '請選擇這一罐是第幾號色階。' : '請勾選至少一個色階。已經建檔過的號數不能重複勾選。');
+      if (sr && !data.name) return showError('請填寫顏色名稱。');
+      if (sr) data.tone = tones[0];
+      else if (editing && editing.tone != null) data.tone = null;
+
       if (!editing) {
         const dups = syncDup();
         if (dups.length) {
@@ -673,9 +777,22 @@ export function openPaintForm({ id, preset = {} } = {}) {
             if (p[key]) oldImages.push(p[key]);
           }
         }
-        saved = editing ? await patch('paints', editing.id, data) : await add('paints', data);
+        if (sr && !data.swatch_hex) data.swatch_hex = presetHex(sr.name, data.name, data.tone);
+        if (editing) {
+          saved = await patch('paints', editing.id, data);
+        } else {
+          saved = await add('paints', data);
+          // 一次勾了多個色階：其餘號數各建一筆，圖片各自上傳一份
+          for (const tone of tones.slice(1)) {
+            const extra = { ...data, tone, swatch_hex: hex ? hex.toLowerCase() : presetHex(sr.name, data.name, tone) };
+            for (const key of ['package_image', 'swatch_image']) {
+              if (pending[key] && pending[key] !== 'remove') extra[key] = await be.upload(pending[key].blob);
+            }
+            await add('paints', extra);
+          }
+        }
         oldImages.forEach((path) => be.removeImage(path));
-        toast(editing ? '已儲存' : `已加入：${paintTitle(saved)}`);
+        toast(editing ? '已儲存' : tones.length > 1 ? `已加入 ${data.name} 的 ${tones.length} 個色階` : `已加入：${paintTitle(saved)}`);
         closeOverlay();
       } catch (e2) {
         submit.disabled = false;
@@ -700,7 +817,7 @@ export function openPicker({ title, projectId, exclude = new Set() }) {
       const item = (p) => `<li><button type="button" class="paint" data-pick="${p.id}">
         ${well(p)}
         <span class="paint-main">
-          <span class="paint-line"><b class="code">${esc(p.code || '')}</b><span class="pname">${esc(p.name || '')}</span></span>
+          <span class="paint-line"><b class="code">${esc(p.code || '')}</b><span class="pname">${esc(paintName(p))}</span></span>
           <span class="paint-sub">${esc([brandName(p.brand_id), ALL_CATEGORIES[p.category], MEDIUMS[p.medium]].filter(Boolean).join('　'))}</span>
         </span>
         <span class="paint-stock">${level(p)}</span>

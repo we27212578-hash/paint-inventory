@@ -1,16 +1,16 @@
 // Markdown 匯出／匯入。格式說明見 docs/AI-GUIDE.md
-import { S, be, uuid, loadAll, brandName, seriesName, sortedBrands, seriesOf, comparePaints, byId } from './store.js';
+import { S, be, uuid, loadAll, paintName, brandName, seriesName, sortedBrands, seriesOf, comparePaints, byId } from './store.js';
 import {
   ITEM_CLASSES, ALL_CATEGORIES, MEDIUMS, FINISHES, STATUSES, PROJECT_STATUSES,
 } from './constants.js';
 import { today } from './ui.js';
 
-const PAINT_COLUMNS = ['ID', '類別', '品牌', '系列', '色碼', '色名', '種類', '漆性', '光澤', '容量ml', '數量', '狀態', '擁有', '色票', '備註'];
+const PAINT_COLUMNS = ['ID', '類別', '品牌', '系列', '色碼', '色名', '色階', '種類', '漆性', '光澤', '容量ml', '數量', '狀態', '擁有', '色票', '備註'];
 
 const cell = (v) => String(v ?? '').replace(/\|/g, '｜').replace(/\s*\n\s*/g, ' ').trim();
 const row = (cells) => `| ${cells.map(cell).join(' | ')} |`;
 const shortId = (id) => id.slice(0, 8);
-const paintLabel = (p) => [brandName(p.brand_id), p.code, p.name].filter(Boolean).join(' ');
+const paintLabel = (p) => [brandName(p.brand_id), p.code, paintName(p)].filter(Boolean).join(' ');
 
 export function exportMarkdown() {
   const out = [];
@@ -25,6 +25,7 @@ export function exportMarkdown() {
     `> - 光澤：${Object.values(FINISHES).join('、')}`,
     `> - 狀態：${Object.values(STATUSES).join('、')}、刪除`,
     '> - 擁有：是、否（否 = 還沒買，會出現在購物清單）',
+    '> - 色階：只有分號數的系列才填（例如 Citadel Tone Pro 填 1～5，1 最深），其他留空',
     '> - 色票：#RRGGBB 格式的顏色，可留空',
     '> - 品牌或系列填了系統裡沒有的名稱時，匯入會自動建立。',
     '> - 「計畫」一節只供閱讀，匯入時不會讀取。',
@@ -49,6 +50,7 @@ export function exportMarkdown() {
         seriesName(p.series_id),
         p.code,
         p.name,
+        p.tone ?? '',
         ALL_CATEGORIES[p.category] || '',
         MEDIUMS[p.medium] || '',
         FINISHES[p.finish] || '',
@@ -203,6 +205,10 @@ export function planImport(text) {
       swatch_hex: /^#[0-9a-f]{6}$/i.test(hex) ? hex.toLowerCase() : null,
       notes: get(r, '備註') || null,
     };
+    if (col['色階'] !== undefined) {
+      const t = num(get(r, '色階'));
+      data.tone = t ? Math.round(t) : null;
+    }
     if (!data.code && !data.name) {
       plan.problems.push(`${where}：色碼和色名都是空的，已略過。`);
       return;
@@ -214,7 +220,7 @@ export function planImport(text) {
     const changes = {};
     for (const [k, v] of Object.entries(data)) {
       const old = existing[k] ?? null;
-      const same = k === 'volume_ml' ? Number(old) === Number(v) && (old === null) === (v === null) : old === v;
+      const same = k === 'volume_ml' || k === 'tone' ? Number(old) === Number(v) && (old === null) === (v === null) : old === v;
       if (!same) changes[k] = v;
     }
     if (Object.keys(changes).length) plan.updates.push({ paint: existing, changes });

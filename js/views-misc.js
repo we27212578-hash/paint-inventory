@@ -1,6 +1,6 @@
 // 購物清單、品牌與系列、設定（匯出匯入、分類、外觀、帳號）
 import {
-  S, be, add, patch, del, byId, brandName, seriesName, sortedBrands, seriesOf,
+  S, be, add, patch, del, byId, paintName, brandName, seriesName, sortedBrands, seriesOf,
   shoppingReason, comparePaints, projectsUsing,
 } from './store.js';
 import { MEDIUMS, ALL_CATEGORIES } from './constants.js';
@@ -40,7 +40,7 @@ export function renderShopping() {
       <button class="paint" data-act="paint-open" data-id="${p.id}">
         ${well(p)}
         <span class="paint-main">
-          <span class="paint-line"><b class="code">${esc(p.code || '')}</b><span class="pname">${esc(p.name || '')}</span></span>
+          <span class="paint-line"><b class="code">${esc(p.code || '')}</b><span class="pname">${esc(paintName(p))}</span></span>
           <span class="paint-sub">${esc(sub)}</span>
         </span>
         <span class="paint-stock"><span class="tag warn">${shoppingReason(p)}</span></span>
@@ -71,7 +71,7 @@ actions['shop-copy'] = async () => {
       lines.push('', `【${brandName(p.brand_id)}】`);
       last = p.brand_id;
     }
-    lines.push(`□ ${[p.code, p.name, seriesName(p.series_id)].filter(Boolean).join(' ')}（${shoppingReason(p)}）`);
+    lines.push(`□ ${[p.code, paintName(p), seriesName(p.series_id)].filter(Boolean).join(' ')}（${shoppingReason(p)}）`);
   }
   try {
     await navigator.clipboard.writeText(lines.join('\n').trim());
@@ -92,6 +92,7 @@ export function renderBrands() {
           return `<li>
             <span class="series-name">${esc(s.name)}</span>
             ${s.default_medium ? `<span class="tag">${MEDIUMS[s.default_medium]}</span>` : ''}
+            ${s.tone_count ? `<span class="tag">${s.tone_count} 個色階</span>` : ''}
             <span class="muted">${n ? `${n} 項` : ''}</span>
             <span class="row-tools">
               <button class="link" data-act="series-edit" data-id="${s.id}">編輯</button>
@@ -131,7 +132,15 @@ const brandFields = (b = {}) => [
 const seriesFields = (s = {}) => [
   { name: 'name', label: '系列名稱', required: true, value: s.name || '' },
   { name: 'default_medium', label: '預設漆性', type: 'select', value: s.default_medium || '', options: [['', '不固定'], ...Object.entries(MEDIUMS)] },
+  { name: 'tone_count', label: '色階數量', type: 'number', value: s.tone_count ?? '', hint: '每個顏色分成幾號的系列才需要填，例如 Citadel Tone Pro 填 5。一般系列留空。' },
 ];
+// 色階數量留空時不送出這個欄位（除非是要清掉原本的設定）
+const cleanSeries = (r, old = {}) => {
+  const out = { ...r };
+  if (out.tone_count == null && !old.tone_count) delete out.tone_count;
+  else if (out.tone_count != null) out.tone_count = Math.min(12, Math.max(2, Math.round(out.tone_count)));
+  return out;
+};
 
 actions['brand-add'] = async () => {
   const r = await formModal({ title: '新增品牌', fields: brandFields(), submit: '新增' });
@@ -163,14 +172,14 @@ actions['series-add'] = async (el) => {
   const brandId = el.dataset.id;
   const r = await formModal({ title: `新增 ${brandName(brandId)} 的系列`, fields: seriesFields(), submit: '新增' });
   if (!r) return;
-  await add('series', { brand_id: brandId, ...r, sort: seriesOf(brandId).reduce((m, s) => Math.max(m, s.sort), -1) + 1 }).catch(fail);
+  await add('series', { brand_id: brandId, ...cleanSeries(r), sort: seriesOf(brandId).reduce((m, s) => Math.max(m, s.sort), -1) + 1 }).catch(fail);
   refresh();
 };
 actions['series-edit'] = async (el) => {
   const s = byId('series', el.dataset.id);
   const r = await formModal({ title: '編輯系列', fields: seriesFields(s) });
   if (!r) return;
-  await patch('series', s.id, r).catch(fail);
+  await patch('series', s.id, cleanSeries(r, s)).catch(fail);
   refresh();
 };
 actions['series-delete'] = async (el) => {
@@ -288,7 +297,7 @@ actions['md-import'] = async () => {
   const plan = planImport(await file.text());
   const total = plan.newBrands.length + plan.newSeries.length + plan.creates.length + plan.updates.length + plan.deletes.length;
   const list = (title, rows) => (rows.length ? `<h3>${title}</h3><ul class="plain">${rows.slice(0, 40).map((r) => `<li>${r}</li>`).join('')}${rows.length > 40 ? `<li class="muted">…還有 ${rows.length - 40} 項</li>` : ''}</ul>` : '');
-  const label = (p) => esc([brandName(p.brand_id), p.code, p.name].filter(Boolean).join(' '));
+  const label = (p) => esc([brandName(p.brand_id), p.code, paintName(p)].filter(Boolean).join(' '));
   let confirmed = false;
   await new Promise((resolve) => {
     const el = openOverlay(
@@ -296,7 +305,7 @@ actions['md-import'] = async () => {
         <h2>匯入前確認</h2>
         ${total ? `<p>這份檔案會造成以下變動：</p>` : '<p>這份檔案和目前的資料相同，沒有需要變動的地方。</p>'}
         <div class="import-body">
-          ${list(`新增 ${plan.creates.length} 項`, plan.creates.map((p) => esc([p.code, p.name].filter(Boolean).join(' '))))}
+          ${list(`新增 ${plan.creates.length} 項`, plan.creates.map((p) => esc([p.code, paintName(p)].filter(Boolean).join(' '))))}
           ${list(`修改 ${plan.updates.length} 項`, plan.updates.map((u) => `${label(u.paint)}<span class="muted">　改了 ${Object.keys(u.changes).length} 個欄位</span>`))}
           ${list(`刪除 ${plan.deletes.length} 項`, plan.deletes.map(label))}
           ${list(`新增 ${plan.newBrands.length} 個品牌`, plan.newBrands.map((b) => esc(b.name)))}

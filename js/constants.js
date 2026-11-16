@@ -110,6 +110,7 @@ export const SEED_BRANDS = [
       ['Layer', 'acrylic'],
       ['Shade', 'acrylic'],
       ['Contrast', 'acrylic'],
+      ['Tone Pro', 'acrylic', 5],
       ['Dry', 'acrylic'],
       ['Technical', 'acrylic'],
       ['Air', 'acrylic'],

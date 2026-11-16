@@ -29,7 +29,9 @@ js/backend.js         資料後端（Supabase／試用模式）
 js/store.js           記憶體中的資料與存取函式
 js/views-*.js         各個畫面
 js/md.js              Markdown 匯出匯入、JSON 備份
-supabase/schema.sql   資料庫結構（在 Supabase 的 SQL Editor 執行一次）
+supabase/schema.sql   資料庫結構（新專案在 Supabase 的 SQL Editor 執行一次）
+supabase/migration-*.sql  既有專案的更新，依編號順序各執行一次
+js/presets.js         有色階的系列（如 Citadel Tone Pro）的預設顏色名稱
 docs/AI-GUIDE.md      給 AI 助手的修改指南
 ```
 

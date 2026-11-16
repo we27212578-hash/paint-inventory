@@ -42,8 +42,10 @@ export async function seedIfEmpty() {
   SEED_BRANDS.forEach((b, bi) => {
     const id = uuid();
     brands.push({ id, name: b.name, country: b.country || null, sort: bi });
-    b.series.forEach(([name, medium], si) => {
-      series.push({ id: uuid(), brand_id: id, name, default_medium: medium, sort: si });
+    b.series.forEach(([name, medium, tones], si) => {
+      const row = { id: uuid(), brand_id: id, name, default_medium: medium, sort: si };
+      if (tones) row.tone_count = tones;
+      series.push(row);
     });
   });
   await be.insert('brands', brands);
@@ -69,11 +71,19 @@ export const seriesOf = (brandId) =>
 
 export const normCode = (code) => (code || '').toLowerCase().replace(/[\s\-_.]/g, '');
 
-// 找出同品牌、同色碼的既有顏料（防止重複購買）
-export function findDuplicates({ id, brand_id, code }) {
+// 顯示用的名稱：有色階時接在名稱後面，例如「Ultramar Blue 2」
+export const paintName = (p) => [p.name, p.tone].filter((v) => v !== null && v !== undefined && v !== '').join(' ');
+
+// 找出重複的既有顏料（防止重複購買）
+// 有色碼：同品牌、同色碼。沒有色碼但有色階：同系列、同名稱、同色階。
+export function findDuplicates({ id, brand_id, series_id, code, name, tone }) {
   const n = normCode(code);
-  if (!n) return [];
-  return S.paints.filter((p) => p.id !== id && p.brand_id === (brand_id || null) && normCode(p.code) === n);
+  if (n) return S.paints.filter((p) => p.id !== id && p.brand_id === (brand_id || null) && normCode(p.code) === n);
+  const nm = (name || '').trim().toLowerCase();
+  if (!tone || !nm) return [];
+  return S.paints.filter(
+    (p) => p.id !== id && p.series_id === (series_id || null) && (p.name || '').trim().toLowerCase() === nm && Number(p.tone) === Number(tone),
+  );
 }
 
 export function comparePaints(a, b) {
@@ -81,7 +91,8 @@ export function comparePaints(a, b) {
     brandName(a.brand_id).localeCompare(brandName(b.brand_id)) ||
     seriesName(a.series_id).localeCompare(seriesName(b.series_id)) ||
     (a.code || '').localeCompare(b.code || '', undefined, { numeric: true }) ||
-    (a.name || '').localeCompare(b.name || '')
+    (a.name || '').localeCompare(b.name || '') ||
+    (a.tone || 0) - (b.tone || 0)
   );
 }
 
