@@ -1,0 +1,889 @@
+{
+ "brand": "Vallejo",
+ "series": "Model Color",
+ "source": "https://acrylicosvallejo.com/wp-content/uploads/2024/03/CC329-R00-Model-Color-NewIC.pdf",
+ "source_note": "Acrylicos Vallejo 官方色表 CC329 Model Color & Liquid Metal",
+ "retrieved": "2026-11-17",
+ "items": [
+  {
+   "code": "70.400",
+   "name": "Plastic Putty"
+  },
+  {
+   "code": "70.470",
+   "name": "Gloss Medium"
+  },
+  {
+   "code": "70.510",
+   "name": "Gloss Varnish"
+  },
+  {
+   "code": "70.520",
+   "name": "Matt Varnish"
+  },
+  {
+   "code": "70.521",
+   "name": "Metal Medium"
+  },
+  {
+   "code": "70.522",
+   "name": "Satin Varnish"
+  },
+  {
+   "code": "70.523",
+   "name": "Liquid Mask"
+  },
+  {
+   "code": "70.524",
+   "name": "Thinner Medium"
+  },
+  {
+   "code": "70.540",
+   "name": "Matt Base"
+  },
+  {
+   "code": "70.596",
+   "name": "Glaze Medium"
+  },
+  {
+   "code": "70.597",
+   "name": "Retarder Medium"
+  },
+  {
+   "code": "70.740",
+   "name": "Cam. Middle Brown"
+  },
+  {
+   "code": "70.741",
+   "name": "Cam. Black Green"
+  },
+  {
+   "code": "70.745",
+   "name": "Dark Rose"
+  },
+  {
+   "code": "70.746",
+   "name": "Chestnut Brown"
+  },
+  {
+   "code": "70.747",
+   "name": "Faded Red"
+  },
+  {
+   "code": "70.748",
+   "name": "Light Pink"
+  },
+  {
+   "code": "70.749",
+   "name": "Dark Purple"
+  },
+  {
+   "code": "70.750",
+   "name": "Light Violet"
+  },
+  {
+   "code": "70.751",
+   "name": "Black Violet"
+  },
+  {
+   "code": "70.752",
+   "name": "Infantry Blue"
+  },
+  {
+   "code": "70.753",
+   "name": "Light Blue Green"
+  },
+  {
+   "code": "70.754",
+   "name": "Continental Blue"
+  },
+  {
+   "code": "70.755",
+   "name": "Light Emerald"
+  },
+  {
+   "code": "70.756",
+   "name": "Splinter Green"
+  },
+  {
+   "code": "70.757",
+   "name": "Pacific Green"
+  },
+  {
+   "code": "70.758",
+   "name": "Bright Green"
+  },
+  {
+   "code": "70.759",
+   "name": "German Tank Crew"
+  },
+  {
+   "code": "70.760",
+   "name": "Light Mud"
+  },
+  {
+   "code": "70.761",
+   "name": "Old Wood"
+  },
+  {
+   "code": "70.762",
+   "name": "Grey Brown"
+  },
+  {
+   "code": "70.763",
+   "name": "Canvas"
+  },
+  {
+   "code": "70.764",
+   "name": "Military Yellow"
+  },
+  {
+   "code": "70.765",
+   "name": "Desert Tan"
+  },
+  {
+   "code": "70.766",
+   "name": "Cream White"
+  },
+  {
+   "code": "70.767",
+   "name": "Desert Brown"
+  },
+  {
+   "code": "70.768",
+   "name": "BC Dark Brown"
+  },
+  {
+   "code": "70.769",
+   "name": "Mustard Brown"
+  },
+  {
+   "code": "70.770",
+   "name": "New Wood"
+  },
+  {
+   "code": "70.771",
+   "name": "Dark Rust"
+  },
+  {
+   "code": "70.772",
+   "name": "Medium Grey Blue"
+  },
+  {
+   "code": "70.773",
+   "name": "Violet Grey"
+  },
+  {
+   "code": "70.774",
+   "name": "Lavender Grey"
+  },
+  {
+   "code": "70.800",
+   "name": "Gunmetal Blue"
+  },
+  {
+   "code": "70.801",
+   "name": "Brass"
+  },
+  {
+   "code": "70.802",
+   "name": "Sunset Red"
+  },
+  {
+   "code": "70.803",
+   "name": "Brown Rose"
+  },
+  {
+   "code": "70.804",
+   "name": "Beige Red"
+  },
+  {
+   "code": "70.805",
+   "name": "German Orange"
+  },
+  {
+   "code": "70.806",
+   "name": "German Yellow"
+  },
+  {
+   "code": "70.807",
+   "name": "Oxford Blue"
+  },
+  {
+   "code": "70.808",
+   "name": "Blue Green"
+  },
+  {
+   "code": "70.809",
+   "name": "Royal Blue"
+  },
+  {
+   "code": "70.810",
+   "name": "Royal Purple"
+  },
+  {
+   "code": "70.811",
+   "name": "Blue Violet"
+  },
+  {
+   "code": "70.812",
+   "name": "Violet Red"
+  },
+  {
+   "code": "70.814",
+   "name": "Burnt Red"
+  },
+  {
+   "code": "70.815",
+   "name": "Basic Skin Tone"
+  },
+  {
+   "code": "70.816",
+   "name": "Luftwaffe Uniform"
+  },
+  {
+   "code": "70.817",
+   "name": "Scarlet"
+  },
+  {
+   "code": "70.818",
+   "name": "Red Leather"
+  },
+  {
+   "code": "70.819",
+   "name": "Iraqi Sand"
+  },
+  {
+   "code": "70.820",
+   "name": "Off-White"
+  },
+  {
+   "code": "70.821",
+   "name": "Germ. Beige WWII"
+  },
+  {
+   "code": "70.822",
+   "name": "Cam. Black Brown"
+  },
+  {
+   "code": "70.823",
+   "name": "Luftwaffe Green"
+  },
+  {
+   "code": "70.824",
+   "name": "Orange Ochre"
+  },
+  {
+   "code": "70.825",
+   "name": "Pale Brown"
+  },
+  {
+   "code": "70.826",
+   "name": "Medium Brown"
+  },
+  {
+   "code": "70.827",
+   "name": "Lime Green"
+  },
+  {
+   "code": "70.828",
+   "name": "Mahogany Ink"
+  },
+  {
+   "code": "70.829",
+   "name": "Amaranth Red"
+  },
+  {
+   "code": "70.830",
+   "name": "Ger. Fieldgrey WWII"
+  },
+  {
+   "code": "70.833",
+   "name": "Fern Green"
+  },
+  {
+   "code": "70.835",
+   "name": "Salmon Rose"
+  },
+  {
+   "code": "70.836",
+   "name": "London Grey"
+  },
+  {
+   "code": "70.837",
+   "name": "Pale Sand"
+  },
+  {
+   "code": "70.838",
+   "name": "Emerald"
+  },
+  {
+   "code": "70.840",
+   "name": "Light Turquoise"
+  },
+  {
+   "code": "70.841",
+   "name": "Andrea Blue"
+  },
+  {
+   "code": "70.843",
+   "name": "Cork Brown"
+  },
+  {
+   "code": "70.844",
+   "name": "Deep Sky Blue"
+  },
+  {
+   "code": "70.845",
+   "name": "Sunny Skin Tone"
+  },
+  {
+   "code": "70.846",
+   "name": "Mahogany Brown"
+  },
+  {
+   "code": "70.847",
+   "name": "Dark Sand"
+  },
+  {
+   "code": "70.850",
+   "name": "Medium Olive"
+  },
+  {
+   "code": "70.851",
+   "name": "Bright Orange"
+  },
+  {
+   "code": "70.856",
+   "name": "Ochre Brown"
+  },
+  {
+   "code": "70.858",
+   "name": "Ice Yellow"
+  },
+  {
+   "code": "70.859",
+   "name": "Black Red"
+  },
+  {
+   "code": "70.860",
+   "name": "Med. Flesh Tone"
+  },
+  {
+   "code": "70.861",
+   "name": "Gloss Black"
+  },
+  {
+   "code": "70.862",
+   "name": "Black Grey"
+  },
+  {
+   "code": "70.863",
+   "name": "Gunmetal"
+  },
+  {
+   "code": "70.864",
+   "name": "Natural Steel"
+  },
+  {
+   "code": "70.865",
+   "name": "Oily Steel"
+  },
+  {
+   "code": "70.866",
+   "name": "Grey Green"
+  },
+  {
+   "code": "70.867",
+   "name": "Dark Blue Grey"
+  },
+  {
+   "code": "70.868",
+   "name": "Dark Sea Green"
+  },
+  {
+   "code": "70.869",
+   "name": "Basalt Grey"
+  },
+  {
+   "code": "70.870",
+   "name": "Medium Sea Grey"
+  },
+  {
+   "code": "70.871",
+   "name": "Leather Brown"
+  },
+  {
+   "code": "70.872",
+   "name": "Chocolate Brown"
+  },
+  {
+   "code": "70.873",
+   "name": "US Field Drab"
+  },
+  {
+   "code": "70.874",
+   "name": "Tan Earth"
+  },
+  {
+   "code": "70.875",
+   "name": "Beige Brown"
+  },
+  {
+   "code": "70.876",
+   "name": "Brown Sand"
+  },
+  {
+   "code": "70.877",
+   "name": "Gold Brown"
+  },
+  {
+   "code": "70.878",
+   "name": "Old Gold"
+  },
+  {
+   "code": "70.879",
+   "name": "Green Brown"
+  },
+  {
+   "code": "70.880",
+   "name": "Khaki Grey"
+  },
+  {
+   "code": "70.881",
+   "name": "Green Yellow"
+  },
+  {
+   "code": "70.882",
+   "name": "Middle Stone"
+  },
+  {
+   "code": "70.883",
+   "name": "Silver Grey"
+  },
+  {
+   "code": "70.884",
+   "name": "Stone Grey"
+  },
+  {
+   "code": "70.885",
+   "name": "Pastel Green"
+  },
+  {
+   "code": "70.886",
+   "name": "Green Grey"
+  },
+  {
+   "code": "70.887",
+   "name": "US Olive Drab"
+  },
+  {
+   "code": "70.888",
+   "name": "Olive Grey"
+  },
+  {
+   "code": "70.889",
+   "name": "Olive Brown"
+  },
+  {
+   "code": "70.890",
+   "name": "Refractive Green"
+  },
+  {
+   "code": "70.891",
+   "name": "Intermediate Green"
+  },
+  {
+   "code": "70.892",
+   "name": "Yellow Olive"
+  },
+  {
+   "code": "70.893",
+   "name": "US Dark Green"
+  },
+  {
+   "code": "70.894",
+   "name": "Cam. Olive Green"
+  },
+  {
+   "code": "70.895",
+   "name": "Gunship Green"
+  },
+  {
+   "code": "70.896",
+   "name": "Extra Dark Green"
+  },
+  {
+   "code": "70.897",
+   "name": "Bronze Green"
+  },
+  {
+   "code": "70.898",
+   "name": "Dark Sea Blue"
+  },
+  {
+   "code": "70.899",
+   "name": "Dark Prussian Blue"
+  },
+  {
+   "code": "70.901",
+   "name": "Pastel Blue"
+  },
+  {
+   "code": "70.902",
+   "name": "Azure"
+  },
+  {
+   "code": "70.905",
+   "name": "Blue Grey Pale"
+  },
+  {
+   "code": "70.906",
+   "name": "Pale Blue"
+  },
+  {
+   "code": "70.907",
+   "name": "Pale Grey Blue"
+  },
+  {
+   "code": "70.908",
+   "name": "Carmine Red"
+  },
+  {
+   "code": "70.909",
+   "name": "Vermilion"
+  },
+  {
+   "code": "70.911",
+   "name": "Light Orange"
+  },
+  {
+   "code": "70.913",
+   "name": "Yellow Ochre"
+  },
+  {
+   "code": "70.914",
+   "name": "Green Ochre"
+  },
+  {
+   "code": "70.915",
+   "name": "Deep Yellow"
+  },
+  {
+   "code": "70.916",
+   "name": "Sand Yellow"
+  },
+  {
+   "code": "70.917",
+   "name": "Beige"
+  },
+  {
+   "code": "70.918",
+   "name": "Ivory"
+  },
+  {
+   "code": "70.919",
+   "name": "Cold White"
+  },
+  {
+   "code": "70.920",
+   "name": "German Uniform"
+  },
+  {
+   "code": "70.921",
+   "name": "English Uniform"
+  },
+  {
+   "code": "70.922",
+   "name": "Uniform Green"
+  },
+  {
+   "code": "70.923",
+   "name": "Japan. Unif. WWII"
+  },
+  {
+   "code": "70.924",
+   "name": "Russian Unif. WWII"
+  },
+  {
+   "code": "70.925",
+   "name": "Blue"
+  },
+  {
+   "code": "70.926",
+   "name": "Red"
+  },
+  {
+   "code": "70.927",
+   "name": "Dark Flesh"
+  },
+  {
+   "code": "70.928",
+   "name": "Light Flesh"
+  },
+  {
+   "code": "70.929",
+   "name": "Light Brown"
+  },
+  {
+   "code": "70.930",
+   "name": "Dark Blue"
+  },
+  {
+   "code": "70.939",
+   "name": "Smoke Ink"
+  },
+  {
+   "code": "70.940",
+   "name": "Saddle Brown"
+  },
+  {
+   "code": "70.941",
+   "name": "Burnt Umber"
+  },
+  {
+   "code": "70.943",
+   "name": "Grey Blue"
+  },
+  {
+   "code": "70.944",
+   "name": "Old Rose"
+  },
+  {
+   "code": "70.945",
+   "name": "Magenta"
+  },
+  {
+   "code": "70.946",
+   "name": "Dark Red"
+  },
+  {
+   "code": "70.947",
+   "name": "Dark Vermilion"
+  },
+  {
+   "code": "70.948",
+   "name": "Golden Yellow"
+  },
+  {
+   "code": "70.949",
+   "name": "Light Yellow"
+  },
+  {
+   "code": "70.950",
+   "name": "Black"
+  },
+  {
+   "code": "70.951",
+   "name": "White"
+  },
+  {
+   "code": "70.952",
+   "name": "Lemon Yellow"
+  },
+  {
+   "code": "70.953",
+   "name": "Flat Yellow"
+  },
+  {
+   "code": "70.954",
+   "name": "Yellow Green"
+  },
+  {
+   "code": "70.955",
+   "name": "Flat Flesh"
+  },
+  {
+   "code": "70.956",
+   "name": "Clear Orange"
+  },
+  {
+   "code": "70.957",
+   "name": "Flat Red"
+  },
+  {
+   "code": "70.958",
+   "name": "Pink"
+  },
+  {
+   "code": "70.959",
+   "name": "Purple"
+  },
+  {
+   "code": "70.960",
+   "name": "Violet"
+  },
+  {
+   "code": "70.961",
+   "name": "Sky Blue"
+  },
+  {
+   "code": "70.962",
+   "name": "Flat Blue"
+  },
+  {
+   "code": "70.963",
+   "name": "Medium Blue"
+  },
+  {
+   "code": "70.964",
+   "name": "Field Blue"
+  },
+  {
+   "code": "70.965",
+   "name": "Prussian Blue"
+  },
+  {
+   "code": "70.966",
+   "name": "Turquoise"
+  },
+  {
+   "code": "70.967",
+   "name": "Olive Green"
+  },
+  {
+   "code": "70.968",
+   "name": "Flat Green"
+  },
+  {
+   "code": "70.969",
+   "name": "Park Green Flat"
+  },
+  {
+   "code": "70.970",
+   "name": "Deep Green"
+  },
+  {
+   "code": "70.971",
+   "name": "Light Green Grey"
+  },
+  {
+   "code": "70.972",
+   "name": "Light Green Blue"
+  },
+  {
+   "code": "70.974",
+   "name": "Green Sky"
+  },
+  {
+   "code": "70.975",
+   "name": "Military Green"
+  },
+  {
+   "code": "70.976",
+   "name": "Buff"
+  },
+  {
+   "code": "70.977",
+   "name": "Desert Yellow"
+  },
+  {
+   "code": "70.978",
+   "name": "Dark Yellow"
+  },
+  {
+   "code": "70.979",
+   "name": "Cam. Dark Green"
+  },
+  {
+   "code": "70.980",
+   "name": "Black Green"
+  },
+  {
+   "code": "70.981",
+   "name": "Orange Brown"
+  },
+  {
+   "code": "70.982",
+   "name": "Cavalry Brown"
+  },
+  {
+   "code": "70.983",
+   "name": "Flat Earth"
+  },
+  {
+   "code": "70.984",
+   "name": "Flat Brown"
+  },
+  {
+   "code": "70.985",
+   "name": "Hull Red"
+  },
+  {
+   "code": "70.986",
+   "name": "Deck Tan"
+  },
+  {
+   "code": "70.987",
+   "name": "Medium Grey"
+  },
+  {
+   "code": "70.988",
+   "name": "Khaki"
+  },
+  {
+   "code": "70.989",
+   "name": "Sky Grey"
+  },
+  {
+   "code": "70.990",
+   "name": "Light Grey"
+  },
+  {
+   "code": "70.991",
+   "name": "Dark Sea Grey"
+  },
+  {
+   "code": "70.992",
+   "name": "Neutral Grey"
+  },
+  {
+   "code": "70.993",
+   "name": "White Grey"
+  },
+  {
+   "code": "70.994",
+   "name": "Dark Grey"
+  },
+  {
+   "code": "70.995",
+   "name": "German Grey"
+  },
+  {
+   "code": "70.996",
+   "name": "Gold"
+  },
+  {
+   "code": "70.997",
+   "name": "Silver"
+  },
+  {
+   "code": "70.998",
+   "name": "Bronze"
+  },
+  {
+   "code": "70.999",
+   "name": "Copper"
+  },
+  {
+   "code": "71.261",
+   "name": "Airbrush Thinner"
+  },
+  {
+   "code": "71.262",
+   "name": "Airbrush"
+  },
+  {
+   "code": "73.212",
+   "name": "Decal Softener"
+  },
+  {
+   "code": "73.213",
+   "name": "Decal Fix"
+  },
+  {
+   "code": "73.214",
+   "name": "Chipping Medium"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "brand": "Vallejo",
+ "series": "Liquid Metal",
+ "source": "https://acrylicosvallejo.com/wp-content/uploads/2024/03/CC329-R00-Model-Color-NewIC.pdf",
+ "source_note": "Acrylicos Vallejo 官方色表 CC329 Model Color & Liquid Metal",
+ "retrieved": "2026-11-17",
+ "items": [
+  {
+   "code": "70.790",
+   "name": "Silver"
+  },
+  {
+   "code": "70.791",
+   "name": "Gold"
+  },
+  {
+   "code": "70.792",
+   "name": "Old Gold"
+  },
+  {
+   "code": "70.793",
+   "name": "Rich Gold"
+  },
+  {
+   "code": "70.794",
+   "name": "Red Gold"
+  },
+  {
+   "code": "70.795",
+   "name": "Green Gold"
+  },
+  {
+   "code": "70.796",
+   "name": "White Gold"
+  },
+  {
+   "code": "70.797",
+   "name": "Copper"
+  }
+ ]
+}

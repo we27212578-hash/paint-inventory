@@ -1,0 +1,553 @@
+{
+ "brand": "Vallejo",
+ "series": "Game Color",
+ "source": "Acrylicos Vallejo 官方色表 CC266 Game Color & Xpress Color（Rev.03）",
+ "source_note": "Acrylicos Vallejo 官方色表 CC266 Game Color & Xpress Color（Rev.03）",
+ "retrieved": "2026-11-17",
+ "items": [
+  {
+   "code": "70.521",
+   "name": "Metal Medium"
+  },
+  {
+   "code": "70.596",
+   "name": "Glaze Medium"
+  },
+  {
+   "code": "71.261",
+   "name": "Airbrush Thinner"
+  },
+  {
+   "code": "72.001",
+   "name": "Dead White"
+  },
+  {
+   "code": "72.003",
+   "name": "Pale Flesh"
+  },
+  {
+   "code": "72.004",
+   "name": "Elf Skin Tone"
+  },
+  {
+   "code": "72.005",
+   "name": "Moon Yellow"
+  },
+  {
+   "code": "72.006",
+   "name": "Sun Yellow"
+  },
+  {
+   "code": "72.007",
+   "name": "Gold Yellow"
+  },
+  {
+   "code": "72.008",
+   "name": "Orange Fire"
+  },
+  {
+   "code": "72.009",
+   "name": "Hot Orange"
+  },
+  {
+   "code": "72.010",
+   "name": "Bloody Red"
+  },
+  {
+   "code": "72.011",
+   "name": "Gory Red"
+  },
+  {
+   "code": "72.012",
+   "name": "Scarlet Red"
+  },
+  {
+   "code": "72.013",
+   "name": "Squid Pink"
+  },
+  {
+   "code": "72.014",
+   "name": "Warlord Purple"
+  },
+  {
+   "code": "72.015",
+   "name": "Hexed Lichen"
+  },
+  {
+   "code": "72.016",
+   "name": "Royal Purple"
+  },
+  {
+   "code": "72.019",
+   "name": "Night Blue"
+  },
+  {
+   "code": "72.020",
+   "name": "Imperial Blue"
+  },
+  {
+   "code": "72.021",
+   "name": "Magic Blue"
+  },
+  {
+   "code": "72.022",
+   "name": "Ultramarine Blue"
+  },
+  {
+   "code": "72.023",
+   "name": "Electric Blue"
+  },
+  {
+   "code": "72.024",
+   "name": "Turquoise"
+  },
+  {
+   "code": "72.025",
+   "name": "Foul Green"
+  },
+  {
+   "code": "72.026",
+   "name": "Jade Green"
+  },
+  {
+   "code": "72.027",
+   "name": "Scurvy Green"
+  },
+  {
+   "code": "72.028",
+   "name": "Dark Green"
+  },
+  {
+   "code": "72.029",
+   "name": "Sick Green"
+  },
+  {
+   "code": "72.030",
+   "name": "Goblin Green"
+  },
+  {
+   "code": "72.031",
+   "name": "Camouflage Green"
+  },
+  {
+   "code": "72.032",
+   "name": "Scorpy Green"
+  },
+  {
+   "code": "72.034",
+   "name": "Bone White"
+  },
+  {
+   "code": "72.035",
+   "name": "Dead Flesh"
+  },
+  {
+   "code": "72.036",
+   "name": "Bronze Brown"
+  },
+  {
+   "code": "72.038",
+   "name": "Scrofulous Brown"
+  },
+  {
+   "code": "72.039",
+   "name": "Plague Brown"
+  },
+  {
+   "code": "72.040",
+   "name": "Leather Brown"
+  },
+  {
+   "code": "72.042",
+   "name": "Parasite Brown"
+  },
+  {
+   "code": "72.043",
+   "name": "Beasty Brown"
+  },
+  {
+   "code": "72.044",
+   "name": "Dark Flesh Tone"
+  },
+  {
+   "code": "72.045",
+   "name": "Charred Brown"
+  },
+  {
+   "code": "72.047",
+   "name": "Wolf Grey"
+  },
+  {
+   "code": "72.048",
+   "name": "Sombre Grey"
+  },
+  {
+   "code": "72.049",
+   "name": "Stonewall Grey"
+  },
+  {
+   "code": "72.050",
+   "name": "Neutral Grey"
+  },
+  {
+   "code": "72.051",
+   "name": "Black"
+  },
+  {
+   "code": "72.052",
+   "name": "Silver"
+  },
+  {
+   "code": "72.053",
+   "name": "Chainmail"
+  },
+  {
+   "code": "72.054",
+   "name": "Dark Gunmetal"
+  },
+  {
+   "code": "72.055",
+   "name": "Polished Gold"
+  },
+  {
+   "code": "72.056",
+   "name": "Glorious Gold"
+  },
+  {
+   "code": "72.057",
+   "name": "Bright Bronze"
+  },
+  {
+   "code": "72.058",
+   "name": "Brassy Brass"
+  },
+  {
+   "code": "72.059",
+   "name": "Hammered Copper"
+  },
+  {
+   "code": "72.060",
+   "name": "Tinny Tin"
+  },
+  {
+   "code": "72.061",
+   "name": "Khaki"
+  },
+  {
+   "code": "72.062",
+   "name": "Earth"
+  },
+  {
+   "code": "72.063",
+   "name": "Desert Yellow"
+  },
+  {
+   "code": "72.066",
+   "name": "Tan"
+  },
+  {
+   "code": "72.067",
+   "name": "Cayman Green"
+  },
+  {
+   "code": "72.071",
+   "name": "Barbarian Skin"
+  },
+  {
+   "code": "72.076",
+   "name": "Alien Purple"
+  },
+  {
+   "code": "72.082",
+   "name": "White"
+  },
+  {
+   "code": "72.083",
+   "name": "Magenta"
+  },
+  {
+   "code": "72.084",
+   "name": "Dark Turquoise"
+  },
+  {
+   "code": "72.085",
+   "name": "Yellow"
+  },
+  {
+   "code": "72.086",
+   "name": "Red"
+  },
+  {
+   "code": "72.087",
+   "name": "Violet"
+  },
+  {
+   "code": "72.088",
+   "name": "Blue"
+  },
+  {
+   "code": "72.089",
+   "name": "Green"
+  },
+  {
+   "code": "72.090",
+   "name": "Black Green"
+  },
+  {
+   "code": "72.091",
+   "name": "Sepia"
+  },
+  {
+   "code": "72.093",
+   "name": "Skin"
+  },
+  {
+   "code": "72.094",
+   "name": "Black"
+  },
+  {
+   "code": "72.095",
+   "name": "Glacier Blue"
+  },
+  {
+   "code": "72.096",
+   "name": "Verdigris"
+  },
+  {
+   "code": "72.098",
+   "name": "Elfic Flesh"
+  },
+  {
+   "code": "72.099",
+   "name": "Skin Tone"
+  },
+  {
+   "code": "72.100",
+   "name": "Rosy Flesh"
+  },
+  {
+   "code": "72.101",
+   "name": "Off-White"
+  },
+  {
+   "code": "72.102",
+   "name": "Steel Grey"
+  },
+  {
+   "code": "72.103",
+   "name": "Fluorescent Yellow"
+  },
+  {
+   "code": "72.104",
+   "name": "Fluorescent Green"
+  },
+  {
+   "code": "72.106",
+   "name": "Scarlet Blood"
+  },
+  {
+   "code": "72.107",
+   "name": "Athena Skin"
+  },
+  {
+   "code": "72.108",
+   "name": "Succubus Skin"
+  },
+  {
+   "code": "72.109",
+   "name": "Toxic Yellow"
+  },
+  {
+   "code": "72.110",
+   "name": "Sunset Orange"
+  },
+  {
+   "code": "72.111",
+   "name": "Nocturnal Red"
+  },
+  {
+   "code": "72.112",
+   "name": "Evil Red"
+  },
+  {
+   "code": "72.113",
+   "name": "Deep Magenta"
+  },
+  {
+   "code": "72.114",
+   "name": "Lustful Purple"
+  },
+  {
+   "code": "72.115",
+   "name": "Grunge Brown"
+  },
+  {
+   "code": "72.116",
+   "name": "Midnight Purple"
+  },
+  {
+   "code": "72.117",
+   "name": "Elfic Blue"
+  },
+  {
+   "code": "72.118",
+   "name": "Sunrise Blue"
+  },
+  {
+   "code": "72.119",
+   "name": "Aquamarine"
+  },
+  {
+   "code": "72.120",
+   "name": "Abyssal Turquoise"
+  },
+  {
+   "code": "72.121",
+   "name": "Ghost Green"
+  },
+  {
+   "code": "72.122",
+   "name": "Bile Green"
+  },
+  {
+   "code": "72.123",
+   "name": "Angel Green"
+  },
+  {
+   "code": "72.124",
+   "name": "Gorgon Brown"
+  },
+  {
+   "code": "72.145",
+   "name": "Dirty Grey"
+  },
+  {
+   "code": "72.148",
+   "name": "Warm Grey"
+  },
+  {
+   "code": "72.155",
+   "name": "Charcoal"
+  },
+  {
+   "code": "72.156",
+   "name": "Fluorescent Orange"
+  },
+  {
+   "code": "72.157",
+   "name": "Fluorescent Red"
+  },
+  {
+   "code": "72.158",
+   "name": "Fluoresc. Magenta"
+  },
+  {
+   "code": "72.159",
+   "name": "Fluorescent Violet"
+  },
+  {
+   "code": "72.160",
+   "name": "Fluorescent Blue"
+  },
+  {
+   "code": "72.161",
+   "name": "Fluo. Cold Green"
+  },
+  {
+   "code": "72.600",
+   "name": "Vomit"
+  },
+  {
+   "code": "72.601",
+   "name": "Fresh Blood"
+  },
+  {
+   "code": "72.602",
+   "name": "Thick Blood"
+  },
+  {
+   "code": "72.603",
+   "name": "Demon Blood"
+  },
+  {
+   "code": "72.604",
+   "name": "Frost"
+  },
+  {
+   "code": "72.605",
+   "name": "Green Rust"
+  },
+  {
+   "code": "72.606",
+   "name": "Bile"
+  },
+  {
+   "code": "72.607",
+   "name": "Acid"
+  },
+  {
+   "code": "72.608",
+   "name": "Corrosion"
+  },
+  {
+   "code": "72.609",
+   "name": "Rust"
+  },
+  {
+   "code": "72.610",
+   "name": "Galvanic Corrosion"
+  },
+  {
+   "code": "72.611",
+   "name": "Moss and Lichen"
+  },
+  {
+   "code": "72.650",
+   "name": "Gloss Poly. Varnish"
+  },
+  {
+   "code": "72.651",
+   "name": "Matt Poly. Varnish"
+  },
+  {
+   "code": "72.652",
+   "name": "Satin Poly. Varnish"
+  },
+  {
+   "code": "72.653",
+   "name": "Ultra Matt Pol. Varn."
+  },
+  {
+   "code": "73.200",
+   "name": "Sepia"
+  },
+  {
+   "code": "73.201",
+   "name": "Black"
+  },
+  {
+   "code": "73.203",
+   "name": "Umber"
+  },
+  {
+   "code": "73.204",
+   "name": "Flesh"
+  },
+  {
+   "code": "73.206",
+   "name": "Red"
+  },
+  {
+   "code": "73.207",
+   "name": "Blue"
+  },
+  {
+   "code": "73.208",
+   "name": "Yellow"
+  },
+  {
+   "code": "73.209",
+   "name": "Violet"
+  }
+ ]
+}

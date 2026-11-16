@@ -1,3 +1,7 @@
 {
- "ak interactive|3rd generation acrylics": "ak-3rd-gen.json"
+ "ak interactive|3rd generation acrylics": "ak-3rd-gen.json",
+ "vallejo|model color": "vallejo-model-color.json",
+ "vallejo|liquid metal": "vallejo-liquid-metal.json",
+ "vallejo|game color": "vallejo-game-color.json",
+ "vallejo|xpress color": "vallejo-xpress-color.json"
 }

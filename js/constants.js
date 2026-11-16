@@ -97,6 +97,7 @@ export const SEED_BRANDS = [
       ['Xpress Color', 'acrylic'],
       ['Mecha Color', 'acrylic'],
       ['Metal Color', 'acrylic'],
+      ['Liquid Metal', 'other'],
       ['Surface Primer', 'acrylic'],
       ['Model Wash', 'acrylic'],
       ['Pigments', 'other'],
