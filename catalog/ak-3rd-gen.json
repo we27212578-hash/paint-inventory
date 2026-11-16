@@ -1,0 +1,149 @@
+{
+ "brand": "AK Interactive",
+ "series": "3rd Generation Acrylics",
+ "source": "https://ak-interactive.com/product-category/paints/paints-acrylics/3rd-acrylics/",
+ "source_note": "AK Interactive 官方網站商品列表。目前只收錄第 5 頁（AK11102–AK11129），其餘尚待補齊。",
+ "retrieved": "2026-11-17",
+ "items": [
+  {
+   "code": "AK11102",
+   "name": "Deep Brown",
+   "line": "Intense"
+  },
+  {
+   "code": "AK11103",
+   "name": "Medium Rust",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11104",
+   "name": "Saddle Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11105",
+   "name": "Light Rust",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11106",
+   "name": "Mahogany Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11107",
+   "name": "Dark Rust",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11108",
+   "name": "Hull Red",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11109",
+   "name": "Dark Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11110",
+   "name": "Leather Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11111",
+   "name": "Burnt Umber",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11112",
+   "name": "Grim Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11113",
+   "name": "Chocolate (Chipping)",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11114",
+   "name": "Deck Tan",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11115",
+   "name": "Light Earth",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11116",
+   "name": "Tan Yellow",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11117",
+   "name": "Golden Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11118",
+   "name": "Ochre",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11119",
+   "name": "Cork",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11120",
+   "name": "Mud Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11121",
+   "name": "Tan Earth",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11122",
+   "name": "Green Ochre",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11123",
+   "name": "Japanese Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11124",
+   "name": "Middle Stone",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11125",
+   "name": "Grey-Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11126",
+   "name": "Green-Brown",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11127",
+   "name": "British Khaki",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11128",
+   "name": "Luminous Green",
+   "line": "Standard"
+  },
+  {
+   "code": "AK11129",
+   "name": "Fluorescent Green",
+   "line": "Standard"
+  }
+ ]
+}

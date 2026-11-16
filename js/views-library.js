@@ -4,6 +4,7 @@ import {
   findDuplicates, comparePaints, projectsUsing, normCode, paintName,
 } from './store.js';
 import { tonePreset, presetHex } from './presets.js';
+import { loadCatalog, findByCode } from './catalog.js';
 import {
   ITEM_CLASSES, PAINT_CATEGORIES, AUX_CATEGORIES, ALL_CATEGORIES, CATEGORY_HINTS,
   MEDIUMS, MEDIUM_GROUPS, FINISHES, STATUSES,
@@ -479,7 +480,7 @@ export function openPaintForm({ id, preset = {} } = {}) {
         <div class="fields two">
           <label class="field"><span>品牌</span><select name="brand_id">${brandOptions(p.brand_id)}</select></label>
           <label class="field"><span>系列</span><select name="series_id">${seriesOptions(p.brand_id, p.series_id)}</select></label>
-          <label class="field"><span>色碼</span><input name="code" value="${esc(p.code || '')}" placeholder="例如 XF-63" autocomplete="off" autocapitalize="characters"></label>
+          <label class="field"><span>色碼</span><input name="code" value="${esc(p.code || '')}" placeholder="例如 XF-63" autocomplete="off" autocapitalize="characters" list="pf-codes"><datalist id="pf-codes"></datalist><small id="pf-cat-src"></small></label>
           <label class="field"><span>名稱</span><input name="name" value="${esc(p.name || '')}" placeholder="例如 German Grey" autocomplete="off" list="pf-families"><datalist id="pf-families"></datalist></label>
         </div>
         <div class="tone-field" id="pf-tone" hidden>
@@ -578,6 +579,37 @@ export function openPaintForm({ id, preset = {} } = {}) {
       $('#pf-tone-boxes', el).innerHTML = html;
       $('#pf-tone-hint', el).textContent = editing ? '　這一罐是第幾號' : '　勾選你有的號數，可以一次勾多個';
     };
+    // 官方色表：選了有色表的系列後，輸入色碼會自動帶出名稱（仍可自行修改）
+    let catalog = null;
+    const nameField = field('name');
+    const applyCode = () => {
+      const hit = findByCode(catalog, field('code').value);
+      const src = $('#pf-cat-src', el);
+      if (!hit) {
+        src.textContent = catalog ? `這個系列有官方色表（${catalog.items.length} 色），輸入色碼會自動帶出名稱。` : '';
+        return;
+      }
+      if (!nameField.value.trim() || nameField.dataset.auto === '1') {
+        nameField.value = hit.name;
+        nameField.dataset.auto = '1';
+      }
+      src.textContent = `官方色表：${hit.code} ${hit.name}${hit.line ? `（${hit.line}）` : ''}`;
+    };
+    const applyName = () => {
+      nameField.dataset.auto = '';
+      const hit = catalog?.byName.get(nameField.value.trim().toLowerCase());
+      if (hit && !field('code').value.trim()) {
+        field('code').value = hit.code;
+        applyCode();
+        syncDup();
+      }
+    };
+    const syncCatalog = async () => {
+      catalog = await loadCatalog(brandName(field('brand_id').value), seriesName(field('series_id').value)).catch(() => null);
+      $('#pf-codes', el).innerHTML = catalog ? catalog.items.map((it) => `<option value="${esc(it.code)}">${esc(it.name)}</option>`).join('') : '';
+      if (catalog && !tonedSeries()) $('#pf-families', el).innerHTML = catalog.items.map((it) => `<option value="${esc(it.name)}">${esc(it.code)}</option>`).join('');
+      applyCode();
+    };
     const syncDup = () => {
       if (tonedSeries() && !field('code').value.trim()) {
         $('#pf-dup', el).innerHTML = '';
@@ -597,8 +629,10 @@ export function openPaintForm({ id, preset = {} } = {}) {
       if (ok) $('#pf-color', el).value = hex.toLowerCase();
     };
 
-    syncClass(); syncOwned(); syncCatHint(); syncTone(); syncDup();
+    syncClass(); syncOwned(); syncCatHint(); syncTone(); syncDup(); syncCatalog();
     field('name').addEventListener('input', syncTone);
+    field('name').addEventListener('input', applyName);
+    field('code').addEventListener('input', applyCode);
 
     $$('input[name=item_class]', el).forEach((r) =>
       r.addEventListener('change', () => {
@@ -625,6 +659,7 @@ export function openPaintForm({ id, preset = {} } = {}) {
       field('series_id').innerHTML = seriesOptions(sel.value, null);
       syncTone();
       syncDup();
+      syncCatalog();
     });
 
     field('series_id').addEventListener('change', async () => {
@@ -649,6 +684,7 @@ export function openPaintForm({ id, preset = {} } = {}) {
       if (s?.default_medium) field('medium').value = s.default_medium;
       syncTone();
       syncDup();
+      syncCatalog();
     });
 
     $('#pf-color', el).addEventListener('input', (e) => {

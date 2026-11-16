@@ -31,6 +31,8 @@ js/views-*.js         各個畫面
 js/md.js              Markdown 匯出匯入、JSON 備份
 supabase/schema.sql   資料庫結構（新專案在 Supabase 的 SQL Editor 執行一次）
 supabase/migration-*.sql  既有專案的更新，依編號順序各執行一次
+js/catalog.js         官方色表的載入與查詢
+catalog/              官方色表資料（只收錄原廠公布的色碼與名稱）
 js/presets.js         有色階的系列（如 Citadel Tone Pro）的預設顏色名稱
 docs/AI-GUIDE.md      給 AI 助手的修改指南
 ```
